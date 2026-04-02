@@ -1,0 +1,5 @@
+dna_data.txt
+*.txt
+!README.txt
+node_modules
+.git
