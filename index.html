@@ -538,6 +538,16 @@ th {
   <p>Comprehensive Genomic Analysis Platform</p>
   <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
   <div class="progress-text" id="progressText">Initializing...</div>
+  <div id="uploadArea" style="display:none; margin-top:16px; text-align:center;">
+    <label for="dnaFileInput" style="display:inline-block; padding:12px 28px; background:linear-gradient(135deg,var(--accent),var(--accent2)); color:white; border-radius:10px; cursor:pointer; font-weight:600; font-size:0.95rem;">
+      Upload Your 23andMe DNA File
+    </label>
+    <input type="file" id="dnaFileInput" accept=".txt,.csv,.tsv" style="display:none;" onchange="handleFileUpload(event)" />
+    <p style="color:var(--text-muted); font-size:0.8rem; margin-top:10px; max-width:350px;">
+      Your data stays in your browser — nothing is uploaded to any server.<br>
+      Download your raw data from <a href="https://you.23andme.com/tools/data/download/" target="_blank" style="color:var(--accent);">23andMe</a>.
+    </p>
+  </div>
 </div>
 
 <div class="app" id="app">
@@ -3358,15 +3368,26 @@ async function loadAndAnalyze() {
   progressText.textContent = 'Loading DNA data...';
   progressFill.style.width = '10%';
 
-  // Fetch the file
+  // Fetch the file or show upload UI
   let rawText;
   try {
     const response = await fetch('dna_data.txt');
+    if (!response.ok) throw new Error('not found');
     rawText = await response.text();
+    if (rawText.length < 1000 || rawText.includes('<!DOCTYPE') || rawText.includes('<html')) throw new Error('not a DNA file');
   } catch(e) {
-    progressText.textContent = 'Error loading DNA file. Ensure dna_data.txt is in the same folder.';
+    progressText.textContent = 'No DNA file found. Upload your 23andMe data to begin.';
+    document.getElementById('uploadArea').style.display = 'block';
+    progressFill.style.width = '0%';
     return;
   }
+
+  analyzeRawText(rawText);
+}
+
+async function analyzeRawText(rawText) {
+  const progressFill = document.getElementById('progressFill');
+  const progressText = document.getElementById('progressText');
 
   progressText.textContent = 'Parsing SNP data...';
   progressFill.style.width = '30%';
@@ -4236,6 +4257,23 @@ function renderChat() {
   </section>`;
 
   return html;
+}
+
+function handleFileUpload(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  document.getElementById('uploadArea').style.display = 'none';
+  const progressText = document.getElementById('progressText');
+  const progressFill = document.getElementById('progressFill');
+  progressText.textContent = 'Reading file...';
+  progressFill.style.width = '10%';
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const rawText = e.target.result;
+    analyzeRawText(rawText);
+  };
+  reader.readAsText(file);
 }
 
 function toggleMobileNav() {

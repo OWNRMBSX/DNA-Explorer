@@ -5,3 +5,5 @@ dna_data.txt
 
 # Node
 node_modules/
+
+.vercel
