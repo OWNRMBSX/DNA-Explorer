@@ -1077,6 +1077,94 @@ cancer: {
       },
       clinical: "MAP3K1 (MEKK1) is a serine/threonine kinase in the JNK/ERK signaling cascade. Somatic MAP3K1 mutations are found in ~8% of breast cancers. This germline variant modestly alters breast cancer susceptibility, likely through effects on estrogen receptor signaling crosstalk.",
       recommendation: "For females with AC/CC: Standard breast cancer screening adherence. This variant contributes modestly to overall breast cancer risk — most valuable when considered alongside other risk loci (FGFR2, TOX3, etc.) for polygenic risk assessment."
+    },
+    {
+      rsid: "rs4784227", gene: "TOX3/TNRC9", name: "TOX3 — Breast Cancer Susceptibility",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard breast cancer risk at this locus." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "One risk allele at the TOX3 locus, a transcription factor involved in chromatin remodeling. Modestly increased breast cancer susceptibility (~20% per allele)." },
+        "TT": { risk: "elevated", label: "Homozygous Risk", desc: "Two risk alleles. TOX3 rs4784227 is one of the strongest common breast cancer GWAS signals (OR ~1.4), especially for ER-positive tumors." }
+      },
+      clinical: "TOX3 (also called TNRC9) encodes a high-mobility-group (HMG) box transcription factor. The rs4784227 variant is in a regulatory region that alters TOX3 expression in breast tissue. This locus has been consistently replicated across multiple large GWAS as one of the top breast cancer risk loci, particularly for estrogen receptor-positive disease.",
+      recommendation: "For CT/TT females: Consider enhanced breast cancer screening starting 5 years earlier than standard guidelines. Combine with other breast cancer risk SNPs (FGFR2, MAP3K1, etc.) for polygenic risk assessment. Maintain healthy weight, limit alcohol, and exercise regularly — all reduce breast cancer risk regardless of genotype."
+    },
+    {
+      rsid: "rs1799966", gene: "BRCA1", name: "BRCA1 Coding Variant",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Wild-type BRCA1 at this position. Standard DNA repair function." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "One variant allele in BRCA1 exon 16. This common coding variant (D1689E) has been debated but is generally considered a low-penetrance risk modifier rather than a pathogenic mutation." },
+        "TT": { risk: "moderate", label: "Homozygous Variant", desc: "Homozygous for the BRCA1 D1689E variant. This is a missense change in the BRCT domain; clinical significance is modest compared to pathogenic BRCA1 mutations." }
+      },
+      clinical: "BRCA1 is the most important hereditary breast/ovarian cancer gene. This particular variant (rs1799966, D1689E) is a common missense polymorphism in the BRCT protein interaction domain. Unlike rare pathogenic BRCA1 mutations (which confer 60-80% lifetime breast cancer risk), this common variant has modest effect size. It may modify risk in the context of other genetic and environmental factors.",
+      recommendation: "This is NOT equivalent to a pathogenic BRCA1 mutation. If you have a strong family history of breast/ovarian cancer, consider clinical genetic testing through a genetic counselor for rare pathogenic BRCA1/BRCA2 mutations, which are NOT captured by consumer genotyping chips."
+    },
+    {
+      rsid: "rs11571833", gene: "BRCA2", name: "BRCA2 K3326X — Breast/Ovarian Cancer",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal", desc: "Wild-type BRCA2 at this position." },
+        "GA": { risk: "moderate", label: "Heterozygous", desc: "Carrier of BRCA2 K3326X truncating variant. This creates a premature stop codon near the C-terminus of BRCA2. Associated with modestly increased breast, ovarian, and lung cancer risk." },
+        "AA": { risk: "elevated", label: "Homozygous Variant", desc: "Homozygous for BRCA2 K3326X. Rare genotype associated with increased cancer susceptibility." }
+      },
+      clinical: "BRCA2 K3326X (rs11571833) is a relatively common stop-gain variant that truncates the last 93 amino acids of BRCA2. Unlike most BRCA2 truncating mutations (which are clearly pathogenic), this C-terminal truncation has intermediate penetrance. Meta-analyses show OR ~1.3 for breast cancer, ~2.0 for ovarian cancer, and ~1.7 for lung squamous cell carcinoma.",
+      recommendation: "For GA/AA: Enhanced cancer screening is reasonable — discuss with your doctor. This is NOT a classic high-penetrance BRCA2 mutation, but it does carry measurably increased risk for breast, ovarian, and lung cancers. If you smoke, cessation is especially important given the lung cancer association."
+    },
+    {
+      rsid: "rs4415084", gene: "FGF10", name: "FGF10 — Breast Cancer",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard breast cancer risk at this locus." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "One risk allele near FGF10. Fibroblast growth factor 10 is critical for mammary gland development and branching morphogenesis." },
+        "TT": { risk: "moderate", label: "Homozygous Risk", desc: "Two risk alleles. Modestly increased breast cancer susceptibility through altered FGF10 signaling in breast tissue." }
+      },
+      clinical: "FGF10 (Fibroblast Growth Factor 10) is essential for mammary gland development, acting through FGFR2b to drive epithelial branching. This variant at 5p12 was identified in breast cancer GWAS and may alter regulatory elements controlling FGF10 expression. Effect size is modest (OR ~1.1-1.2 per allele).",
+      recommendation: "For CT/TT: Consider as part of a polygenic breast cancer risk profile. Maintain healthy lifestyle factors that independently reduce breast cancer risk: regular exercise, healthy BMI, moderate alcohol intake, and adequate vitamin D."
+    },
+    {
+      rsid: "rs1078643", gene: "CASP8", name: "CASP8 D302H — Breast Cancer Protection",
+      risk_allele: "G", normal_allele: "A",
+      genotypes: {
+        "AA": { risk: "typical", label: "Normal", desc: "Standard CASP8 function and typical breast cancer risk." },
+        "AG": { risk: "low", label: "Protective Carrier", desc: "One copy of the protective CASP8 D302H variant. Caspase-8 is a key initiator of apoptosis — this variant may modestly reduce breast cancer risk through enhanced programmed cell death." },
+        "GG": { risk: "low", label: "Homozygous Protective", desc: "Two copies of the protective allele. Strongest breast cancer risk reduction at this locus through enhanced apoptotic signaling." }
+      },
+      clinical: "CASP8 (Caspase-8) is a critical initiator caspase in the extrinsic apoptosis pathway. The D302H variant (rs1078643) has been associated with reduced breast cancer risk in large consortium studies (OR ~0.88). Enhanced apoptotic clearance of damaged cells may explain the protective effect. This is one of the few common variants associated with DECREASED cancer risk.",
+      recommendation: "For AG/GG: This is a favorable finding — the variant is associated with modestly reduced breast cancer risk. Continue standard screening and healthy lifestyle practices. The protective effect does not eliminate the need for appropriate cancer screening."
+    },
+    {
+      rsid: "rs61764370", gene: "KRAS", name: "KRAS-variant LCS6 — Ovarian/Lung Cancer",
+      risk_allele: "G", normal_allele: "T",
+      genotypes: {
+        "TT": { risk: "typical", label: "Normal", desc: "Standard KRAS regulation. Normal let-7 microRNA binding." },
+        "TG": { risk: "moderate", label: "Heterozygous", desc: "Carrier of the KRAS-variant. This 3'UTR variant disrupts let-7 microRNA binding to KRAS mRNA, increasing KRAS protein expression. Associated with increased ovarian and non-small cell lung cancer risk." },
+        "GG": { risk: "elevated", label: "Homozygous Variant", desc: "Two copies of the KRAS-variant. Maximal disruption of let-7 regulation of KRAS oncogene expression." }
+      },
+      clinical: "The KRAS-variant (rs61764370) is a functional variant in the 3'UTR of the KRAS oncogene that disrupts a let-7 complementary site (LCS6). Let-7 is a tumor suppressor microRNA; when it cannot bind and silence KRAS, oncogenic signaling increases. Studies show increased risk of ovarian cancer (especially in BRCA1/2 negative families), NSCLC, and triple-negative breast cancer.",
+      recommendation: "For TG/GG: Avoid smoking (critical given the lung cancer association). For females, consider enhanced ovarian cancer screening if combined with family history. Discuss with your doctor whether CA-125 monitoring or imaging is appropriate."
+    },
+    {
+      rsid: "rs401681", gene: "TERT-CLPTM1L", name: "TERT-CLPTM1L — Multiple Cancers",
+      risk_allele: "C", normal_allele: "T",
+      genotypes: {
+        "TT": { risk: "typical", label: "Normal", desc: "Standard cancer risk at the 5p15.33 locus." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "One risk allele at the TERT-CLPTM1L locus. This region harbors variants affecting telomerase activity and apoptosis regulation, with pleiotropic cancer effects." },
+        "CC": { risk: "moderate", label: "Homozygous Risk", desc: "Two risk alleles. Increased susceptibility to multiple cancer types including lung, bladder, prostate, and basal cell carcinoma." }
+      },
+      clinical: "The 5p15.33 locus contains two critical genes: TERT (telomerase reverse transcriptase) and CLPTM1L (cisplatin resistance-related protein). This variant has pleiotropic cancer associations — it increases risk for some cancers (lung, bladder, prostate) while paradoxically being protective for others (melanoma). The mechanism involves altered telomere maintenance and apoptosis regulation.",
+      recommendation: "For CT/CC: Avoid tobacco exposure (amplifies the lung cancer risk). Sun protection is less critical here (the variant is actually melanoma-protective). Consider prostate cancer screening discussions with your doctor if male. Maintain overall cancer-preventive lifestyle: healthy diet, exercise, minimal alcohol."
+    },
+    {
+      rsid: "rs2736098", gene: "TERT", name: "TERT — Telomerase & Cancer Susceptibility",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal", desc: "Standard telomerase expression in somatic cells." },
+        "GA": { risk: "moderate", label: "Heterozygous", desc: "One copy of the variant in the TERT promoter region. May alter telomerase reverse transcriptase expression, affecting telomere maintenance and cellular immortalization." },
+        "AA": { risk: "moderate", label: "Homozygous Variant", desc: "Increased TERT expression in somatic cells. While telomerase is beneficial in stem cells, inappropriate expression in somatic cells is a hallmark of cancer." }
+      },
+      clinical: "TERT encodes the catalytic subunit of telomerase, the enzyme that maintains telomere length. While telomere maintenance is essential for stem cells and longevity, inappropriate TERT activation in somatic cells enables cellular immortalization — a key cancer hallmark. This variant alters TERT expression and has been associated with increased risk of lung, bladder, cervical, and other cancers in large GWAS.",
+      recommendation: "For GA/AA: Standard cancer screening adherence. Lifestyle factors that support healthy telomere dynamics: regular exercise, stress management, adequate sleep, and antioxidant-rich diet. Avoid tobacco — it both shortens telomeres and activates carcinogenic pathways."
     }
   ]
 },
@@ -1341,6 +1429,72 @@ neurological: {
       },
       clinical: "This exonic GABRA2 variant affects the alpha-2 subunit expressed predominantly in the hippocampus and amygdala — brain regions critical for anxiety, memory, and emotional regulation. Altered EEG beta power (a heritable endophenotype) is a consistent intermediate marker linking this variant to anxiety and addiction.",
       recommendation: "For CT/TT: Mindful approach to alcohol use — the variant may affect both reward and withdrawal sensitivity. Regular exercise is particularly effective for GABA modulation. Magnesium and L-theanine may support GABAergic tone naturally."
+    },
+    {
+      rsid: "rs110402", gene: "CRHR1", name: "CRHR1 — Cortisol/HPA Axis Stress Response",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal", desc: "Standard corticotropin-releasing hormone receptor function. Typical HPA axis stress response." },
+        "GA": { risk: "moderate", label: "Heterozygous", desc: "Modified CRHR1 expression affecting cortisol response to stress. In the context of childhood adversity, this variant modifies risk for depression and PTSD." },
+        "AA": { risk: "moderate", label: "Stress-Sensitive", desc: "Altered HPA axis regulation. Associated with increased cortisol reactivity and risk for depression, especially following stressful life events. Gene-environment interaction is key." }
+      },
+      clinical: "CRHR1 (Corticotropin-Releasing Hormone Receptor 1) is the primary receptor for CRH, the master regulator of the HPA (hypothalamic-pituitary-adrenal) stress axis. This variant modifies how the HPA axis responds to stress. Importantly, CRHR1 variants show strong gene-environment interaction: the effect on depression/PTSD risk is most pronounced in individuals with childhood trauma or chronic stress exposure.",
+      recommendation: "For GA/AA: Proactive stress management is especially important — regular exercise, meditation, adequate sleep, and social support. If exposed to trauma, early therapeutic intervention (CBT, EMDR) may be particularly beneficial. Cortisol-lowering practices: morning sunlight, cold exposure, phosphatidylserine."
+    },
+    {
+      rsid: "rs242924", gene: "CRHR1", name: "CRHR1 — Stress Resilience",
+      risk_allele: "T", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal", desc: "Standard CRHR1 function and stress response." },
+        "GT": { risk: "moderate", label: "Heterozygous", desc: "Modified CRH receptor sensitivity. This variant is part of a CRHR1 haplotype that interacts with early life stress to influence adult depression risk." },
+        "TT": { risk: "moderate", label: "Stress-Susceptible", desc: "Altered CRHR1 signaling. In combination with early adversity, associated with increased risk of major depression and anxiety disorders through modified cortisol feedback." }
+      },
+      clinical: "This CRHR1 variant is in linkage disequilibrium with rs110402 and contributes to a haplotype block affecting HPA axis regulation. The Binder et al. landmark study showed that CRHR1 haplotypes moderate the effect of childhood maltreatment on adult depression. This variant is particularly informative when analyzed alongside rs110402 for cumulative CRHR1 haplotype effects.",
+      recommendation: "For GT/TT: Prioritize resilience-building strategies. Therapy, strong social connections, and regular physical activity are evidence-based protective factors. If you have a history of childhood adversity, consider working with a trauma-informed therapist."
+    },
+    {
+      rsid: "rs4713916", gene: "FKBP5", name: "FKBP5 — Glucocorticoid Receptor / Trauma",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal", desc: "Standard FKBP5 expression and glucocorticoid receptor sensitivity." },
+        "GA": { risk: "moderate", label: "Heterozygous", desc: "Modified FKBP5 expression affecting glucocorticoid receptor sensitivity. FKBP5 is a co-chaperone that regulates cortisol receptor function in the brain." },
+        "AA": { risk: "elevated", label: "Cortisol-Sensitive", desc: "Increased FKBP5 expression leading to reduced glucocorticoid receptor sensitivity. Creates a state of cortisol resistance where the brain is less able to terminate the stress response." }
+      },
+      clinical: "FKBP5 (FK506-binding protein 5) is a co-chaperone of the glucocorticoid receptor complex. When FKBP5 is overexpressed, it reduces cortisol receptor sensitivity, impairing negative feedback and prolonging the stress response. This variant increases FKBP5 expression and has been strongly linked to PTSD risk, depression, and peritraumatic dissociation — especially when combined with childhood trauma (gene × environment interaction).",
+      recommendation: "For GA/AA: Proactive cortisol management: regular exercise (the single most effective cortisol regulator), mindfulness meditation, adequate sleep (7-9 hours), and limiting caffeine after noon. If you have trauma history, consider FKBP5-informed treatment — some researchers suggest these carriers may respond differently to certain antidepressants."
+    },
+    {
+      rsid: "rs1360780", gene: "FKBP5", name: "FKBP5 — Cortisol Sensitivity & PTSD Risk",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard glucocorticoid receptor regulation and cortisol feedback." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "Increased FKBP5 expression and altered glucocorticoid receptor sensitivity. This is the most replicated FKBP5 variant for PTSD and depression risk in the context of trauma." },
+        "TT": { risk: "elevated", label: "High Cortisol Sensitivity", desc: "Strongly increased FKBP5 expression. Cortisol resistance with prolonged stress response. The most replicated genetic risk factor for PTSD when combined with trauma exposure." }
+      },
+      clinical: "rs1360780 is the most extensively studied FKBP5 variant. The T allele creates a CTCF-dependent chromatin loop that increases FKBP5 transcription in response to cortisol. This creates a feed-forward loop: stress → cortisol → increased FKBP5 → cortisol resistance → prolonged stress response. Epigenetic studies show childhood trauma can demethylate FKBP5 intron 7 in T allele carriers, permanently increasing expression.",
+      recommendation: "For CT/TT: This is one of the most actionable psychiatric genetics findings. Prioritize: (1) Stress reduction practices, (2) Therapy if experiencing trauma symptoms, (3) Sleep hygiene, (4) Regular exercise. These carriers may benefit particularly from trauma-focused therapies (CPT, PE, EMDR). Discuss with a psychiatrist if currently on cortisol-modifying medications."
+    },
+    {
+      rsid: "rs2230912", gene: "P2RX7", name: "P2RX7 — Purinergic Receptor / Depression",
+      risk_allele: "G", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard P2X7 receptor function. Normal ATP-mediated signaling in the nervous system and immune cells." },
+        "CG": { risk: "moderate", label: "Heterozygous", desc: "Modified P2X7 receptor function. This Gln460Arg variant alters ATP-gated ion channel activity, affecting neuroinflammation and microglial activation." },
+        "GG": { risk: "elevated", label: "Homozygous Variant", desc: "Significantly altered P2X7 receptor function. Associated with increased risk of major depressive disorder and bipolar disorder through enhanced neuroinflammation." }
+      },
+      clinical: "P2RX7 encodes the P2X7 purinergic receptor, an ATP-gated cation channel highly expressed on microglia (brain immune cells). When activated, P2X7 triggers NLRP3 inflammasome assembly and IL-1β release — a key neuroinflammatory pathway increasingly implicated in depression. The Gln460Arg variant (rs2230912) has been associated with mood disorders in multiple studies, supporting the neuroinflammation hypothesis of depression.",
+      recommendation: "For CG/GG: Anti-inflammatory lifestyle strategies may be particularly beneficial: omega-3 fatty acids (EPA especially), regular exercise (anti-neuroinflammatory), curcumin, adequate sleep, and stress reduction. If experiencing depression, discuss with your doctor — some antidepressants have anti-inflammatory properties (SSRIs, ketamine) that may be particularly relevant."
+    },
+    {
+      rsid: "rs10994359", gene: "ANK3", name: "ANK3 — Ankyrin-G / Bipolar Disorder",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard Ankyrin-G expression and sodium channel organization at nodes of Ranvier." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "Modified ANK3 expression. Ankyrin-G is essential for organizing sodium channels at axon initial segments, affecting neuronal excitability and action potential initiation." },
+        "TT": { risk: "elevated", label: "Homozygous Risk", desc: "Increased bipolar disorder susceptibility. ANK3 is one of the most replicated bipolar disorder GWAS loci, also associated with schizophrenia and autism spectrum traits." }
+      },
+      clinical: "ANK3 encodes Ankyrin-G, a scaffolding protein essential for clustering voltage-gated sodium channels at the axon initial segment — the site where action potentials are generated. Disrupted Ankyrin-G function alters neuronal excitability, and ANK3 is one of the most robustly replicated GWAS loci for bipolar disorder (also associated with schizophrenia). Lithium, the gold-standard bipolar treatment, may work partly through GSK3β-dependent modulation of Ankyrin-G function.",
+      recommendation: "For CT/TT: Mood stability practices are important: consistent sleep schedule (critical for bipolar spectrum), regular exercise, stress management, and avoidance of stimulants and sleep deprivation. If experiencing mood swings, discuss with a psychiatrist — early intervention improves long-term outcomes."
     }
   ]
 },
@@ -1539,6 +1693,50 @@ longevity: {
       },
       clinical: "This TERT variant was identified in large-scale longevity GWAS and Mendelian randomization studies linking genetically determined telomere length to lifespan. Each A allele associates with ~0.5 year increased lifespan on average in population studies.",
       recommendation: "For CC: Active telomere maintenance through lifestyle optimization. For CA/AA: Favorable telomere genetics — maintain with healthy lifestyle to maximize the advantage."
+    },
+    {
+      rsid: "rs3803304", gene: "AKT1", name: "AKT1 — Insulin/Growth Signaling & Longevity",
+      risk_allele: "G", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard AKT1 kinase activity and insulin/mTOR signaling." },
+        "CG": { risk: "moderate", label: "Heterozygous", desc: "Modified AKT1 signaling. AKT (Protein Kinase B) is a central node in the insulin/IGF-1/mTOR pathway — the most conserved longevity pathway across species." },
+        "GG": { risk: "moderate", label: "Altered Signaling", desc: "Significantly modified AKT1 activity affecting downstream mTOR and FOXO signaling. May influence lifespan through altered insulin sensitivity and cellular growth regulation." }
+      },
+      clinical: "AKT1 is a serine/threonine kinase central to the PI3K/AKT/mTOR signaling cascade — the most conserved aging pathway from yeast to humans. Reduced insulin/IGF-1/mTOR signaling consistently extends lifespan across species. AKT phosphorylates FOXO transcription factors (pushing them out of the nucleus), affects mTOR-driven cellular senescence, and regulates autophagy. This variant modifies AKT1 activity, potentially affecting the balance between growth and longevity.",
+      recommendation: "For CG/GG: Strategies that modulate the insulin/mTOR axis may be particularly relevant: time-restricted eating, reduced refined carbohydrate intake, regular exercise (activates AMPK which opposes mTOR), and adequate protein without excess. Metformin and rapamycin are being studied as mTOR modulators for longevity."
+    },
+    {
+      rsid: "rs2542052", gene: "CETP", name: "CETP — HDL Cholesterol & Centenarian Longevity",
+      risk_allele: "C", normal_allele: "T",
+      genotypes: {
+        "TT": { risk: "typical", label: "Normal", desc: "Standard CETP activity and HDL cholesterol levels." },
+        "CT": { risk: "low", label: "Favorable", desc: "Reduced CETP activity leading to higher HDL cholesterol levels. This variant is enriched in centenarians and their offspring compared to age-matched controls." },
+        "CC": { risk: "low", label: "Longevity Variant", desc: "Significantly reduced CETP activity with substantially elevated HDL. Strongly enriched in Ashkenazi Jewish centenarians and associated with exceptional longevity, preserved cognitive function, and cardiovascular protection." }
+      },
+      clinical: "CETP (Cholesteryl Ester Transfer Protein) transfers cholesterol from HDL to LDL/VLDL. Reduced CETP activity raises HDL and lowers LDL — a favorable lipid profile. Nir Barzilai's landmark Longevity Genes Project found CETP longevity variants enriched in centenarians, with carriers having larger HDL particle size, higher HDL levels, and preserved cognitive function into advanced age. This is one of the most validated human longevity genes.",
+      recommendation: "For CT/CC: This is a favorable longevity variant. Maintain the advantage with heart-healthy lifestyle: Mediterranean diet, regular exercise, moderate alcohol intake (which further raises HDL). Your genetics may give you a head start on cardiovascular aging — don't squander it with poor lifestyle choices."
+    },
+    {
+      rsid: "rs5882", gene: "CETP", name: "CETP I405V — HDL & Healthy Aging",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal", desc: "Standard CETP protein function. Typical cholesterol ester transfer activity." },
+        "GA": { risk: "low", label: "Favorable Heterozygous", desc: "CETP I405V — one copy of the valine variant reduces CETP activity, raising HDL cholesterol. Associated with favorable lipid profiles and longevity." },
+        "AA": { risk: "low", label: "Longevity Variant", desc: "Homozygous CETP I405V. Maximally reduced CETP activity with highest HDL levels. Enriched in long-lived populations and associated with preserved cognitive function." }
+      },
+      clinical: "The CETP I405V (Ile405Val) variant reduces CETP protein activity by altering protein stability. Like rs2542052, this functional variant has been associated with exceptional longevity in multiple cohorts. The combination of elevated HDL, larger HDL particle size, and reduced atherogenic lipoprotein transfer contributes to cardiovascular protection and healthy aging. HDL also has anti-inflammatory, antioxidant, and neuroprotective properties beyond reverse cholesterol transport.",
+      recommendation: "For GA/AA: Favorable cardiovascular aging genetics. Maximize the benefit: regular aerobic exercise (further raises HDL), omega-3 fatty acids, moderate alcohol (if you drink), and avoidance of trans fats (which lower HDL). Monitor lipid panel — you may naturally have high HDL, which is protective."
+    },
+    {
+      rsid: "rs2230806", gene: "ABCA1", name: "ABCA1 — Cholesterol Efflux & Longevity",
+      risk_allele: "G", normal_allele: "A",
+      genotypes: {
+        "AA": { risk: "typical", label: "Normal", desc: "Standard ABCA1 cholesterol transporter function and HDL biogenesis." },
+        "AG": { risk: "moderate", label: "Heterozygous", desc: "Modified ABCA1 function. ABCA1 is the primary transporter responsible for cholesterol efflux from macrophages — the critical first step in reverse cholesterol transport and HDL particle formation." },
+        "GG": { risk: "moderate", label: "Altered Efflux", desc: "Significantly modified cholesterol efflux capacity. ABCA1 variants affect HDL biogenesis and may influence cardiovascular aging and longevity." }
+      },
+      clinical: "ABCA1 (ATP-Binding Cassette Transporter A1) is essential for the first step of reverse cholesterol transport — effluxing cholesterol from macrophage foam cells in arterial walls to lipid-poor apoA-I, forming nascent HDL particles. Loss-of-function mutations cause Tangier disease (near-absent HDL). Common variants like rs2230806 (R219K) modify ABCA1 efficiency. The K allele has been associated with favorable lipid profiles and reduced coronary artery disease in some populations. ABCA1 function declines with aging, contributing to cardiovascular disease.",
+      recommendation: "For AG/GG: Support cholesterol efflux capacity: regular exercise (increases ABCA1 expression), omega-3 fatty acids, and plant sterols. Avoid excessive saturated fat. Consider monitoring HDL-C and apoA-I levels. LXR agonists (found in certain phytochemicals) can upregulate ABCA1 expression."
     }
   ]
 },
@@ -2520,6 +2718,556 @@ blood_clotting: {
       recommendation: "For CT/TT: If you ever have a prolonged aPTT on routine testing, inform your doctor this may be due to genetically low Factor XII — it is NOT a bleeding risk and does NOT require treatment. This can prevent unnecessary coagulation workup and delays to surgery. Document this for your medical records."
     }
   ]
+},
+
+// ---------------------------------------------------------------------------
+// CONNECTIVE TISSUE & JOINT HEALTH
+// ---------------------------------------------------------------------------
+connective_tissue: {
+  label: "Connective Tissue & Joint Health",
+  icon: "🦴",
+  description: "Genetic variants affecting collagen synthesis, joint hypermobility, Ehlers-Danlos spectrum traits, Marfan-spectrum connective tissue features, and cartilage/tendon integrity. Connective tissue disorders are among the most underdiagnosed conditions — these variants help identify predisposition.",
+  snps: [
+    {
+      rsid: "rs1800255", gene: "COL3A1", name: "COL3A1 — Type III Collagen / Vascular EDS Spectrum",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard Type III collagen production. Normal vascular and tissue integrity." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "One copy of the COL3A1 Ala698Thr variant. Type III collagen is the primary collagen in blood vessels, hollow organs, and skin. Modified collagen structure may affect tissue extensibility and vascular wall integrity." },
+        "TT": { risk: "elevated", label: "Homozygous Variant", desc: "Two copies of the variant. More significantly altered Type III collagen. Associated with joint hypermobility, arterial fragility, and features overlapping with the vascular Ehlers-Danlos spectrum (though classic vEDS requires rare pathogenic mutations)." }
+      },
+      clinical: "COL3A1 encodes the pro-alpha1 chain of Type III collagen — the predominant collagen in blood vessel walls, skin, and hollow organs. Rare heterozygous pathogenic COL3A1 mutations cause vascular Ehlers-Danlos syndrome (vEDS), a life-threatening condition. This common variant (Ala698Thr, rs1800255) is NOT equivalent to pathogenic vEDS mutations but represents a spectrum of collagen III function. It has been associated with joint hypermobility, arterial aneurysm susceptibility, and connective tissue laxity. Note: rs1800012 (COL1A1 Sp1) in the fitness category also affects collagen — review both for a complete connective tissue profile.",
+      recommendation: "For CT/TT: Gentle assessment of joint hypermobility (Beighton score). Avoid extreme joint hyperextension during exercise. If you have easy bruising, translucent skin, or family history of arterial aneurysm, discuss with your doctor. Consider collagen-supporting nutrients: vitamin C, glycine, proline. Avoid fluoroquinolone antibiotics if possible (they weaken collagen)."
+    },
+    {
+      rsid: "rs2276109", gene: "MMP12", name: "MMP12 — Matrix Metalloproteinase / Tissue Remodeling",
+      risk_allele: "G", normal_allele: "A",
+      genotypes: {
+        "AA": { risk: "typical", label: "Normal", desc: "Standard MMP12 (macrophage elastase) expression and extracellular matrix turnover." },
+        "AG": { risk: "moderate", label: "Heterozygous", desc: "Modified MMP12 promoter activity. MMP12 degrades elastin, a key component of blood vessels, lungs, and skin. Altered expression affects tissue remodeling and repair dynamics." },
+        "GG": { risk: "elevated", label: "Increased MMP12", desc: "Enhanced MMP12 expression leading to increased elastin degradation. Associated with arterial stiffness, emphysema susceptibility, and accelerated tissue aging." }
+      },
+      clinical: "MMP12 (Matrix Metalloproteinase 12, also called macrophage elastase) is the primary enzyme that degrades elastin — the protein responsible for tissue elasticity in blood vessels, lungs, and skin. The rs2276109 variant is a functional promoter polymorphism that alters AP-1 transcription factor binding, modifying MMP12 expression. Higher MMP12 activity accelerates elastin degradation, contributing to vascular stiffness, COPD/emphysema, and connective tissue aging.",
+      recommendation: "For AG/GG: Protect your elastin: avoid smoking (critical — smoke activates MMP12 in macrophages), minimize UV exposure, ensure adequate antioxidant intake (vitamins C, E, selenium). Regular cardiovascular exercise helps maintain vascular elasticity. Consider pulse wave velocity testing as a measure of arterial stiffness."
+    },
+    {
+      rsid: "rs143383", gene: "GDF5", name: "GDF5 — Joint Development & Osteoarthritis",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard GDF5 expression. Normal joint development, cartilage maintenance, and osteoarthritis risk." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "Reduced GDF5 expression in joint tissues. GDF5 (Growth Differentiation Factor 5) is a BMP family member essential for joint formation and cartilage homeostasis. ~1.3x increased osteoarthritis risk." },
+        "TT": { risk: "elevated", label: "Homozygous Risk", desc: "Significantly reduced GDF5 expression. ~1.7x increased osteoarthritis risk, particularly in the knee. Also associated with shorter stature, developmental dysplasia of the hip, and congenital joint defects." }
+      },
+      clinical: "GDF5 is a bone morphogenetic protein (BMP) family member critical for joint formation during development and cartilage maintenance throughout life. The rs143383 variant is a functional 5'UTR polymorphism that reduces GDF5 transcription by ~25% per T allele through differential allelic expression. This is one of the most strongly replicated osteoarthritis susceptibility variants, with consistent associations across European and Asian populations. Rare GDF5 mutations cause skeletal malformations (brachydactyly, symphalangism).",
+      recommendation: "For CT/TT: Joint-protective strategies are especially important: maintain healthy BMI (every pound lost reduces knee joint load by 4 pounds), regular low-impact exercise (swimming, cycling — strengthens periarticular muscles without joint stress), glucosamine/chondroitin sulfate (modest evidence), and adequate vitamin D. Avoid repetitive high-impact activities. Consider early orthopedic assessment if joint symptoms develop."
+    },
+    {
+      rsid: "rs12722", gene: "COL5A1", name: "COL5A1 — Type V Collagen / Tendon & Ligament",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard Type V collagen production. Normal tendon and ligament structure and stiffness." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "Modified COL5A1 expression affecting Type V collagen incorporation into collagen fibrils. Type V collagen regulates fibril diameter — altered expression affects tendon/ligament mechanical properties." },
+        "TT": { risk: "elevated", label: "Hypermobility Risk", desc: "Significantly altered Type V collagen. Associated with increased range of motion, joint hypermobility, and paradoxically increased risk of Achilles tendon injuries and anterior cruciate ligament (ACL) rupture." }
+      },
+      clinical: "COL5A1 encodes the alpha-1 chain of Type V collagen, which is critical for regulating collagen fibril assembly and diameter in tendons, ligaments, and other connective tissues. The rs12722 variant is in the 3'UTR and affects mRNA stability and expression. The T allele is associated with increased range of motion and joint laxity (favorable for dancers/gymnasts) but also increased injury risk (Achilles tendinopathy, ACL rupture) in athletes. This variant was identified in the South African rugby injury cohort studies.",
+      recommendation: "For CT/TT: You may have increased flexibility but also increased injury risk. Prioritize: eccentric strengthening exercises (especially for Achilles tendon), proprioceptive training, adequate warm-up before explosive activities, and collagen supplementation with vitamin C (15g collagen + 50mg vitamin C before exercise). Avoid overstretching — hypermobile joints need strength, not more flexibility."
+    },
+    {
+      rsid: "rs240736", gene: "ADAMTS5", name: "ADAMTS5 — Cartilage Degradation / Aggrecanase",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard ADAMTS5 aggrecanase activity. Normal cartilage turnover and maintenance." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "Modified ADAMTS5 expression. This metalloproteinase is the primary enzyme that degrades aggrecan — the major proteoglycan in articular cartilage that provides compressive resistance." },
+        "TT": { risk: "elevated", label: "Increased Degradation", desc: "Enhanced ADAMTS5 activity leading to accelerated aggrecan degradation and cartilage loss. Increased susceptibility to osteoarthritis, particularly in weight-bearing joints." }
+      },
+      clinical: "ADAMTS5 (A Disintegrin And Metalloproteinase with ThromboSpondin motifs 5) is the primary aggrecanase responsible for cartilage degradation in osteoarthritis. Aggrecan is the proteoglycan that gives cartilage its compressive resistance and shock-absorbing properties. ADAMTS5 knockout mice are protected from osteoarthritis, making this enzyme a therapeutic target. The rs240736 variant modifies ADAMTS5 expression and has been associated with osteoarthritis susceptibility.",
+      recommendation: "For CT/TT: Protect your cartilage: maintain healthy weight, engage in regular low-impact exercise to promote cartilage nutrition (cartilage is avascular — it depends on movement for nutrient delivery), consider glucosamine sulfate (1500mg/day), and ensure adequate omega-3 intake (anti-inflammatory). Avoid prolonged immobilization — cartilage needs intermittent loading to stay healthy."
+    },
+    {
+      rsid: "rs1107946", gene: "COL1A1", name: "COL1A1 Sp1 Upstream — Bone & Connective Tissue",
+      risk_allele: "T", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal", desc: "Standard COL1A1 regulatory activity. Normal Type I collagen gene regulation." },
+        "GT": { risk: "moderate", label: "Heterozygous", desc: "Modified upstream regulatory element affecting COL1A1 transcription. Type I collagen is the most abundant protein in the human body, forming the structural framework of bone, tendon, skin, and connective tissues." },
+        "TT": { risk: "elevated", label: "Altered Collagen", desc: "Significantly modified COL1A1 regulation. Combined with rs1800012 (Sp1 binding site), provides a more complete picture of Type I collagen genetics." }
+      },
+      clinical: "This upstream variant in the COL1A1 regulatory region affects transcription factor binding and gene expression. Type I collagen constitutes ~90% of the organic bone matrix and is the primary structural protein in tendons, ligaments, skin, and organ capsules. Together with rs1800012 (the well-characterized Sp1 binding site variant), this variant helps define your Type I collagen genetic profile. See also COL1A1 rs1800012 in the Fitness category for the classic Sp1 binding site variant affecting bone mineral density and fracture risk.",
+      recommendation: "For GT/TT: Support collagen synthesis with vitamin C (essential cofactor for collagen hydroxylation), adequate protein intake (especially glycine and proline-rich sources like bone broth), and weight-bearing exercise for bone health. Consider DEXA scan for bone density assessment if combined with rs1800012 risk alleles."
+    },
+    {
+      rsid: "rs2707466", gene: "COL1A1", name: "COL1A1 — Bone Mineral Density",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard COL1A1 expression and bone mineral density." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "Modified COL1A1 coding region variant affecting Type I collagen. Associated with reduced bone mineral density and modestly increased fracture risk." },
+        "TT": { risk: "elevated", label: "Low BMD Risk", desc: "Reduced bone mineral density through altered Type I collagen structure/expression. Increased risk of osteoporosis, particularly in postmenopausal women." }
+      },
+      clinical: "This COL1A1 coding variant affects the alpha-1 chain of Type I collagen — the most abundant structural protein in bone, skin, and connective tissue. Genome-wide association studies have consistently linked this variant to bone mineral density variation. Type I collagen forms the organic scaffold of bone upon which hydroxyapatite minerals are deposited; altered collagen structure compromises this scaffold and reduces bone strength.",
+      recommendation: "For CT/TT: Prioritize bone health: weight-bearing and resistance exercise, adequate calcium (1000-1200mg/day from diet + supplements), vitamin D (aim for 40-60 ng/mL serum 25(OH)D), vitamin K2 (directs calcium to bones), and avoidance of excessive alcohol and smoking. Consider early DEXA scan baseline, especially for females approaching menopause."
+    },
+    {
+      rsid: "rs1800587", gene: "IL1A", name: "IL1A -889C>T — Inflammatory Joint Destruction",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard IL-1α production. Normal inflammatory signaling in joints and connective tissue." },
+        "CT": { risk: "moderate", label: "Heterozygous", desc: "Increased IL-1α production due to enhanced promoter activity. IL-1α is a master inflammatory cytokine that drives cartilage degradation, bone resorption, and synovial inflammation." },
+        "TT": { risk: "elevated", label: "Pro-Inflammatory", desc: "Significantly increased IL-1α production. Associated with accelerated joint destruction in osteoarthritis and rheumatoid arthritis, aggressive periodontitis, and coronary artery disease." }
+      },
+      clinical: "IL1A encodes interleukin-1α, a potent pro-inflammatory cytokine. The -889C>T promoter variant (rs1800587) increases IL-1α transcription by altering Spi-1/PU.1 transcription factor binding. IL-1α is a key mediator of joint destruction: it stimulates MMP production (collagen/cartilage degradation), activates osteoclasts (bone resorption), and promotes synovial inflammation. This variant has been associated with osteoarthritis severity, rheumatoid arthritis progression, periodontitis, and cardiovascular inflammation.",
+      recommendation: "For CT/TT: Anti-inflammatory strategies are especially important: omega-3 fatty acids (EPA/DHA — directly inhibit IL-1 signaling), curcumin (NF-κB inhibitor), regular exercise (anti-inflammatory myokines), and anti-inflammatory diet (Mediterranean pattern). Maintain excellent dental hygiene (IL-1α drives periodontitis). If joints are symptomatic, early rheumatology evaluation — IL-1 receptor antagonists (anakinra) are available for severe inflammatory joint disease."
+    }
+  ]
+},
+
+// ---------------------------------------------------------------------------
+// PHYSICAL TRAITS & CHARACTERISTICS
+// ---------------------------------------------------------------------------
+physical_traits: {
+  label: "Physical Traits & Characteristics",
+  icon: "👤",
+  description: "Genetic variants influencing observable physical characteristics including eye color, hair color and texture, skin pigmentation, taste perception, earwax type, and body odor. These traits are among the most well-characterized in human genetics.",
+  snps: [
+    {
+      rsid: "rs12913832", gene: "HERC2", name: "HERC2 — Eye Color (Blue vs Brown)",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Brown Eyes", desc: "Two copies of the ancestral allele. Strong OCA2 expression producing high melanin in the iris. Brown eye color is dominant and the ancestral state in humans." },
+        "GA": { risk: "typical", label: "Carrier / Variable", desc: "One copy of the blue eye allele. Typically brown or hazel eyes, but carries the recessive blue variant. May have lighter eye color depending on other modifier loci (OCA2, SLC24A4, TYR)." },
+        "AA": { risk: "typical", label: "Blue/Light Eyes", desc: "Homozygous for the derived allele. Reduced OCA2 expression due to altered HERC2 enhancer → low iris melanin → blue, gray, or light green eyes. This single variant explains ~75% of eye color variation in Europeans." }
+      },
+      clinical: "rs12913832 is the most powerful single predictor of human eye color. Located in intron 86 of HERC2, it functions as a long-range enhancer controlling OCA2 (the actual pigment gene) expression. The A allele disrupts a helicase-like transcription factor binding site, reducing OCA2 transcription in melanocytes and decreasing iris melanin. The blue-eye allele arose ~6,000-10,000 years ago near the Black Sea region. Note: This SNP also appears in the Eye Health category — here we focus on the trait genetics. Also see rs12913832 in eye_health for macular degeneration implications of light iris color.",
+      recommendation: "This is a trait SNP with minimal health implications. Light eye color (AA) is associated with modestly increased UV sensitivity and glare — wear UV-protective sunglasses. The eye color alleles have a minor association with age-related macular degeneration risk in light-eyed individuals."
+    },
+    {
+      rsid: "rs1667394", gene: "OCA2/HERC2", name: "OCA2/HERC2 — Eye Color Modifier",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Brown Eye Contributor", desc: "Supports higher OCA2 expression and melanin production in the iris." },
+        "GA": { risk: "typical", label: "Intermediate", desc: "One modifier allele. May contribute to hazel, green, or lighter brown eye color in combination with other eye color loci." },
+        "AA": { risk: "typical", label: "Blue Eye Modifier", desc: "Reduced OCA2 expression at this modifier locus. In combination with rs12913832 AA, strongly predicts blue eye color. Alone, may contribute to lighter eye shades." }
+      },
+      clinical: "This variant is in the HERC2/OCA2 region on chromosome 15 and is in partial linkage disequilibrium with rs12913832. It provides additional predictive power for eye color determination, particularly for intermediate phenotypes (hazel, green). Eye color prediction models using 6-8 SNPs (IrisPlex) can achieve >90% accuracy for blue vs brown determination.",
+      recommendation: "Trait variant — no specific health recommendations. Useful for understanding the genetics underlying your eye color and for personal genomics education."
+    },
+    {
+      rsid: "rs4778138", gene: "OCA2", name: "OCA2 — Eye Color",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Darker Iris", desc: "Higher OCA2 activity at this locus. Contributes to brown or darker eye color." },
+        "GA": { risk: "typical", label: "Intermediate", desc: "Heterozygous — moderate OCA2 expression modifier. May contribute to hazel or green eye color." },
+        "AA": { risk: "typical", label: "Lighter Iris", desc: "Reduced OCA2 function at this position. Contributes to lighter eye color (blue, gray, green) especially when combined with other light-eye variants." }
+      },
+      clinical: "OCA2 (Oculocutaneous Albinism II) encodes the P protein, a melanosomal transmembrane protein essential for melanin synthesis. It is the primary gene underlying eye color variation. Multiple OCA2 variants contribute to the full spectrum of iris colors. Rare OCA2 mutations cause oculocutaneous albinism type 2. This common variant is one of several OCA2 SNPs included in forensic eye color prediction panels.",
+      recommendation: "Trait variant — no specific health action needed. Contributes to your overall eye color genetics profile."
+    },
+    {
+      rsid: "rs12821256", gene: "KITLG", name: "KITLG — Blonde Hair Color",
+      risk_allele: "C", normal_allele: "T",
+      genotypes: {
+        "TT": { risk: "typical", label: "Darker Hair", desc: "Standard KITLG enhancer activity. Higher melanocyte stem cell signaling supporting darker hair pigmentation." },
+        "TC": { risk: "typical", label: "Carrier", desc: "One copy of the blonde hair variant. KITLG (KIT Ligand/SCF) regulates melanocyte development and survival — this variant reduces enhancer activity in hair follicle melanocytes." },
+        "CC": { risk: "typical", label: "Blonde Hair Contributor", desc: "Reduced KITLG enhancer activity in hair follicle melanocytes. Contributes to blonde/light hair color. This variant was under positive selection in Northern Europeans." }
+      },
+      clinical: "rs12821256 is located in a hair follicle-specific enhancer element ~350kb upstream of KITLG (KIT Ligand, also called Stem Cell Factor). David Kingsley's lab at Stanford showed this variant reduces enhancer activity by ~20% specifically in hair follicle melanocytes without affecting KITLG function in other tissues (blood, skin, gonads). This tissue-specific regulatory mechanism explains how hair color can evolve independently of other KITLG functions. The C allele shows signatures of positive selection in Northern Europeans.",
+      recommendation: "Trait variant — no health implications. Fascinating example of tissue-specific gene regulation: the same gene (KITLG) has critical functions in blood cell development, fertility, and melanocyte biology, but this variant selectively affects only hair follicle melanocytes."
+    },
+    {
+      rsid: "rs3827760", gene: "EDAR", name: "EDAR V370A — Hair Thickness, Tooth Shape, Sweat",
+      risk_allele: "C", normal_allele: "T",
+      genotypes: {
+        "TT": { risk: "typical", label: "Ancestral", desc: "Ancestral EDAR protein. Standard hair thickness, tooth morphology, and eccrine sweat gland density typical of most global populations." },
+        "TC": { risk: "typical", label: "Heterozygous", desc: "One copy of the East Asian-derived EDAR variant. Intermediate effects on hair follicle shape and sweat gland density." },
+        "CC": { risk: "typical", label: "Derived (East Asian)", desc: "Homozygous for EDAR V370A. Thicker, straighter hair shafts, shovel-shaped incisors, increased eccrine sweat gland density, and smaller mammary glands. This variant was under strong positive selection in East Asia ~30,000 years ago." }
+      },
+      clinical: "EDAR (Ectodysplasin A Receptor) V370A is one of the most dramatic examples of recent human evolution. The derived C allele arose ~30,000 years ago and was driven to near-fixation in East Asian and Native American populations by strong positive selection (possibly for increased sweat gland density in humid climates). The variant is a gain-of-function mutation that increases NF-κB signaling, simultaneously affecting hair follicle cross-section (thicker hair), incisor morphology (shovel-shaped), eccrine sweat gland number (~15% more), and mammary gland branching.",
+      recommendation: "Trait variant — no health implications. This is one of the best-characterized examples of a single amino acid change affecting multiple physical traits simultaneously (pleiotropy). The selective pressure is debated — hypotheses include thermoregulation in humid climates and vitamin D synthesis."
+    },
+    {
+      rsid: "rs17822931", gene: "ABCC11", name: "ABCC11 — Earwax Type & Body Odor",
+      risk_allele: "C", normal_allele: "T",
+      genotypes: {
+        "CC": { risk: "typical", label: "Wet Earwax", desc: "Functional ABCC11 transporter. Wet, sticky, honey-colored earwax. Normal apocrine gland secretion — standard body odor profile requiring regular deodorant use." },
+        "CT": { risk: "typical", label: "Wet Earwax (Dominant)", desc: "Wet earwax phenotype (C is dominant). Functional ABCC11 in apocrine glands. Standard body odor production." },
+        "TT": { risk: "typical", label: "Dry Earwax / Low Odor", desc: "Non-functional ABCC11 transporter. Dry, flaky, gray earwax. Significantly reduced apocrine gland secretion — minimal body odor. You likely don't need deodorant. Nearly universal in East Asian and Native American populations." }
+      },
+      clinical: "ABCC11 encodes an ATP-binding cassette transporter expressed in apocrine glands (earwax glands, axillary sweat glands, mammary glands). The T allele (538G>A, Gly180Arg) causes protein misfolding and degradation, eliminating transporter function. This determines earwax type (wet vs dry) and body odor intensity. The dry earwax/low odor allele (T) reached near-fixation in East Asian populations (~95%) but is rare in Europeans and Africans (~5%). Also affects axillary osmidrosis (body odor condition), colostrum secretion, and possibly breast cancer risk.",
+      recommendation: "For TT: You likely produce minimal body odor and may not need antiperspirant/deodorant. For CC/CT: Standard hygiene practices. Fun fact: earwax type was one of the first Mendelian traits described in humans (1930s Japanese genetics research)."
+    },
+    {
+      rsid: "rs1726866", gene: "TAS2R38", name: "TAS2R38 — Bitter Taste Perception (PTC/PROP)",
+      risk_allele: "C", normal_allele: "T",
+      genotypes: {
+        "TT": { risk: "typical", label: "Taster (PAV)", desc: "Functional TAS2R38 bitter taste receptor. You can strongly taste PTC (phenylthiocarbamide) and PROP (propylthiouracil) — intensely bitter compounds. You likely dislike bitter vegetables (Brussels sprouts, kale) without preparation." },
+        "TC": { risk: "typical", label: "Medium Taster", desc: "Intermediate bitter taste sensitivity. You can detect PTC/PROP but the intensity is moderate. Heterozygous — functional and non-functional receptor copies." },
+        "CC": { risk: "typical", label: "Non-Taster (AVI)", desc: "Non-functional TAS2R38 receptor at this position. Reduced or absent ability to taste PTC/PROP. You likely enjoy bitter foods and may prefer stronger flavors. ~25% of people are non-tasters." }
+      },
+      clinical: "TAS2R38 is the primary bitter taste receptor for thiourea-containing compounds (PTC, PROP). Three SNPs (rs713598, rs1726866, rs10246939) define the PAV (taster) and AVI (non-taster) haplotypes. Bitter taste perception is one of the classic Mendelian traits — ~75% of people are tasters (PAV/PAV or PAV/AVI), ~25% are non-tasters (AVI/AVI). Supertasters have the PAV/PAV genotype with high fungiform papilla density. Bitter taste perception influences dietary preferences, cruciferous vegetable intake, and potentially cancer risk through dietary patterns.",
+      recommendation: "For tasters (TT/TC): Your aversion to bitter vegetables is genetic — try roasting, sautéing with olive oil, or pairing with sweet/umami flavors to make cruciferous vegetables palatable. Brassica vegetables contain sulforaphane and other cancer-protective compounds worth consuming. For non-tasters (CC): You may naturally enjoy bitter foods — take advantage and eat plenty of cruciferous vegetables."
+    },
+    {
+      rsid: "rs713598", gene: "TAS2R38", name: "TAS2R38 A49P — PTC/PROP Tasting",
+      risk_allele: "G", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Non-Taster (AVI)", desc: "Alanine at position 49. Part of the AVI non-taster haplotype. Reduced bitter taste sensitivity." },
+        "CG": { risk: "typical", label: "Intermediate Taster", desc: "Heterozygous A49P. Intermediate bitter taste perception. Can detect PTC/PROP at moderate concentrations." },
+        "GG": { risk: "typical", label: "Taster/Supertaster (PAV)", desc: "Proline at position 49. Part of the PAV taster haplotype. Strong bitter taste sensitivity. Combined with PAV at the other two TAS2R38 positions, you are a taster or supertaster." }
+      },
+      clinical: "This is one of three amino acid changes (A49P, V262A, I296V) that define TAS2R38 taster status. The P49 (G allele) is essential for the PAV taster haplotype. The proline substitution alters the receptor's ligand-binding pocket, enabling high-affinity binding of thiourea-containing compounds. Arthur Fox discovered PTC taste variation in 1931 when a colleague noticed he could taste a compound Fox could not — launching the field of taste genetics.",
+      recommendation: "Combine with rs1726866 and rs10246939 results for complete TAS2R38 haplotype determination. PAV/PAV = supertaster, PAV/AVI = taster, AVI/AVI = non-taster."
+    },
+    {
+      rsid: "rs7495174", gene: "OCA2", name: "OCA2 — Green/Hazel Eye Color",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Darker Eyes", desc: "Full OCA2 expression at this locus. Contributes to brown iris pigmentation." },
+        "GA": { risk: "typical", label: "Intermediate Color", desc: "Modified OCA2 expression. May contribute to hazel, amber, or lighter brown eye color depending on other pigmentation loci." },
+        "AA": { risk: "typical", label: "Green/Hazel Contributor", desc: "Reduced OCA2 expression at this locus. Combined with moderate melanin from other loci, contributes to green or hazel eye color — the rarest natural eye colors." }
+      },
+      clinical: "OCA2 variants create a gradient of melanin production in iris melanocytes. Green eyes result from moderate melanin (due to partial OCA2 reduction) combined with Rayleigh scattering of light in the stroma. Only ~2% of the world population has green eyes. This variant, combined with other OCA2/HERC2 SNPs, helps determine where you fall on the brown→hazel→green→blue spectrum.",
+      recommendation: "Trait variant — no specific health action. Green and hazel eyes have intermediate UV sensitivity between brown and blue. Standard UV-protective eyewear recommended."
+    },
+    {
+      rsid: "rs4778241", gene: "OCA2", name: "OCA2 — Eye Color Modifier",
+      risk_allele: "A", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Darker Eyes", desc: "Full OCA2 function at this regulatory position." },
+        "CA": { risk: "typical", label: "Intermediate", desc: "One copy of the light-eye modifier. Contributes to lighter iris color." },
+        "AA": { risk: "typical", label: "Light Eye Contributor", desc: "Reduced OCA2 at this locus. Part of the multi-SNP panel used in forensic eye color prediction (IrisPlex-S system)." }
+      },
+      clinical: "This OCA2 variant is used in the HIrisPlex-S forensic DNA phenotyping system developed by Manfred Kayser's group. Combined with 5 other eye color SNPs, it enables >90% accurate prediction of blue vs brown eyes and ~75% accuracy for intermediate colors from DNA alone. Used in forensic investigations and historical DNA analysis.",
+      recommendation: "Trait variant. Useful for understanding the polygenic architecture of eye color — multiple variants at OCA2/HERC2 each contribute incrementally to iris melanin levels."
+    },
+    {
+      rsid: "rs1042602", gene: "TYR", name: "TYR — Skin Color & Tanning Ability",
+      risk_allele: "A", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Standard Pigmentation", desc: "Full tyrosinase activity. Standard melanin production and tanning response." },
+        "CA": { risk: "typical", label: "Lighter Pigmentation", desc: "Reduced tyrosinase activity (S192Y variant). Lower constitutive melanin and reduced tanning ability. More common in European populations." },
+        "AA": { risk: "typical", label: "Light Skin / Poor Tanning", desc: "Significantly reduced tyrosinase activity. Lighter skin pigmentation with reduced UV-protective melanin. Increased UV sensitivity." }
+      },
+      clinical: "TYR encodes tyrosinase, the rate-limiting enzyme in melanin biosynthesis. The S192Y variant (rs1042602) reduces enzymatic activity, decreasing melanin production. Tyrosinase catalyzes the first two steps of melanin synthesis (tyrosine → DOPA → dopaquinone). Rare TYR mutations cause oculocutaneous albinism type 1. This common variant contributes to normal skin color variation and has been under positive selection in European populations, likely for enhanced vitamin D synthesis at northern latitudes.",
+      recommendation: "For CA/AA: Increased UV sensitivity — consistent sunscreen use (SPF 30+), protective clothing, and UV-protective eyewear. Monitor moles for changes. Ensure adequate vitamin D through diet/supplementation if sun-avoidant. Your skin produces less protective melanin, so UV damage accumulates faster."
+    },
+    {
+      rsid: "rs1426654", gene: "SLC24A5", name: "SLC24A5 — Skin Pigmentation (Light Skin)",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Ancestral / Darker Skin", desc: "Ancestral SLC24A5 allele. Full melanosomal calcium transport and melanin production. The ancestral state worldwide." },
+        "GA": { risk: "typical", label: "Intermediate", desc: "One copy of the European light-skin allele. Intermediate melanin production. SLC24A5 accounts for ~25-40% of the skin color difference between Europeans and West Africans." },
+        "AA": { risk: "typical", label: "Light Skin (European)", desc: "Homozygous derived allele. Reduced melanosomal calcium transport → smaller, fewer melanosomes → lighter skin. This variant is nearly fixed in European populations (>98%) and arose ~6,000-12,000 years ago, likely for enhanced vitamin D synthesis." }
+      },
+      clinical: "SLC24A5 encodes a melanosomal potassium-dependent sodium/calcium exchanger (NCKX5). The A111T variant (rs1426654) is the single largest-effect variant for human skin pigmentation, explaining ~25-40% of the melanin difference between European and West African populations. The derived allele reduces melanosomal calcium levels, affecting melanin synthesis and melanosome maturation. It underwent one of the strongest known selective sweeps in the human genome, reaching near-fixation in Europeans within ~6,000-12,000 years — likely driven by vitamin D synthesis needs at northern latitudes.",
+      recommendation: "For GA/AA: This is one of the key variants determining skin pigmentation. Lighter skin increases UV sensitivity but enhances vitamin D production. Balance: adequate sun protection while maintaining vitamin D status. For GG: Darker skin provides excellent UV protection but may require vitamin D supplementation at northern latitudes."
+    },
+    {
+      rsid: "rs16891982", gene: "SLC45A2", name: "SLC45A2/MATP — Skin, Hair & Eye Pigmentation",
+      risk_allele: "G", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Ancestral / Darker", desc: "Ancestral SLC45A2 allele. Full MATP (Membrane-Associated Transporter Protein) function supporting melanin production." },
+        "CG": { risk: "typical", label: "Intermediate", desc: "One copy of the European light-pigmentation variant. Moderate reduction in MATP transporter function." },
+        "GG": { risk: "typical", label: "Light Pigmentation", desc: "Homozygous L374F variant. Reduced MATP function → lighter skin, hair, and eye color. Near-fixed in European populations (~95%). Second most important pigmentation gene after SLC24A5." }
+      },
+      clinical: "SLC45A2 (also called MATP, AIM1) encodes a melanosomal transporter essential for melanin synthesis. The L374F variant (rs16891982) significantly reduces transporter function. Like SLC24A5, it shows strong signatures of positive selection in Europeans. The variant contributes to lighter skin, hair, and eye color simultaneously. Rare loss-of-function mutations cause oculocutaneous albinism type 4. This variant is also used as an ancestry-informative marker in forensic genetics.",
+      recommendation: "Trait variant primarily indicating European ancestry adaptation for vitamin D synthesis. For GG: Standard sun protection practices due to reduced melanin. Important for forensic and ancestry genetics — combined with SLC24A5 and OCA2 variants, it provides a comprehensive pigmentation profile."
+    },
+    {
+      rsid: "rs2228479", gene: "MC1R", name: "MC1R V92M — Fair Skin & Freckling",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal MC1R", desc: "Full melanocortin-1 receptor function. Standard eumelanin production and UV tanning response." },
+        "GA": { risk: "moderate", label: "Carrier", desc: "One copy of MC1R V92M. Partial shift from eumelanin (dark/photoprotective) to pheomelanin (red/yellow) production. Modestly lighter skin, increased freckling tendency." },
+        "AA": { risk: "moderate", label: "Fair Skin / Freckling", desc: "MC1R V92M homozygous. Significant shift toward pheomelanin. Fair skin, freckling, and increased UV sensitivity. Note: rs1805007 (R151C) is a stronger red-hair MC1R variant — see Dermatology category." }
+      },
+      clinical: "MC1R (Melanocortin-1 Receptor) is the master switch between eumelanin (brown/black, photoprotective) and pheomelanin (red/yellow, UV-reactive). V92M (rs2228479) is an 'r' (lowercase) variant — it partially reduces MC1R signaling, shifting the eumelanin/pheomelanin balance toward pheomelanin. This causes fair skin, freckling, and increased UV sensitivity but is less penetrant than 'R' (uppercase) variants like R151C (rs1805007) which are strongly associated with red hair. Multiple MC1R variants are additive. See also rs1805007 in other categories for the stronger red hair variant.",
+      recommendation: "For GA/AA: Increased UV sensitivity and melanoma risk through pheomelanin production. Strict sun protection: SPF 30+ daily, protective clothing, avoid tanning beds. Regular skin examinations and mole monitoring. Pheomelanin generates reactive oxygen species upon UV exposure — antioxidant-rich diet and topical antioxidants (vitamin C serum) may be beneficial."
+    },
+    {
+      rsid: "rs1800404", gene: "OCA2", name: "OCA2 — Blue Eye Risk / P Protein",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Darker Eyes", desc: "Full OCA2 P protein function. Standard melanin production in iris melanocytes." },
+        "CT": { risk: "typical", label: "Intermediate", desc: "One copy of the variant reducing OCA2 function. Modified iris melanin contributing to lighter eye color." },
+        "TT": { risk: "typical", label: "Blue Eye Contributor", desc: "Reduced OCA2 P protein function. Decreased melanin in the anterior iris surface. Contributes to blue or light eye color, especially in combination with HERC2 rs12913832 AA genotype." }
+      },
+      clinical: "OCA2 R419Q (rs1800404) is a coding variant in the P protein that reduces melanosomal pH regulation and melanin production in iris melanocytes. It is part of the polygenic architecture of eye color and is included in the IrisPlex forensic eye color prediction panel. While rs12913832 (HERC2) is the dominant eye color variant, OCA2 coding variants like this one provide additional predictive power, especially for intermediate phenotypes.",
+      recommendation: "Trait variant contributing to eye color determination. No specific health action needed beyond standard UV-protective eyewear for lighter-eyed individuals."
+    }
+  ]
+},
+
+// ---------------------------------------------------------------------------
+// CARRIER STATUS — INHERITED CONDITIONS
+// ---------------------------------------------------------------------------
+carrier_status: {
+  label: "Carrier Status — Inherited Conditions",
+  icon: "🧬",
+  description: "Autosomal recessive carrier status — variants where carrying one copy has no health effect on you, but if your partner carries the same variant, each child has a 25% chance of being affected. Carrier screening is especially important for family planning. Note: Consumer genotyping chips detect only specific variants and cannot replace comprehensive clinical carrier screening.",
+  snps: [
+    {
+      rsid: "rs75030027", gene: "HEXA", name: "HEXA — Tay-Sachs Disease Carrier",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Non-Carrier", desc: "Two functional HEXA alleles. Normal hexosaminidase A enzyme activity. Not a Tay-Sachs carrier at this locus." },
+        "CT": { risk: "carrier", label: "Carrier", desc: "One non-functional HEXA allele. You are a Tay-Sachs carrier — you are completely healthy, but if your partner is also a carrier, each child has a 25% chance of Tay-Sachs disease. Carrier frequency: ~1/30 in Ashkenazi Jewish, ~1/300 in general population." },
+        "TT": { risk: "elevated", label: "Affected / Two Variants", desc: "Two non-functional alleles at this locus. This would be associated with reduced hexosaminidase A activity. Clinical correlation required — not all HEXA variants cause classic infantile Tay-Sachs; some cause later-onset forms." }
+      },
+      clinical: "HEXA encodes the alpha subunit of hexosaminidase A, a lysosomal enzyme that degrades GM2 ganglioside. Deficiency causes Tay-Sachs disease — progressive neurodegeneration typically fatal by age 4 in the infantile form. Carrier screening has reduced Tay-Sachs incidence by >90% in the Ashkenazi Jewish population since the 1970s. Important: Consumer chips detect only specific common mutations — comprehensive carrier screening through a clinical lab tests for >100 HEXA variants and enzyme activity.",
+      recommendation: "For CT (carrier): No health impact on you. If planning a family, your partner should also be screened for HEXA mutations. If both partners are carriers, genetic counseling is recommended — prenatal testing and preimplantation genetic diagnosis are available. Consider comprehensive Ashkenazi Jewish panel screening if of Ashkenazi descent."
+    },
+    {
+      rsid: "rs76151636", gene: "HBB", name: "HBB — Sickle Cell Carrier (HbS)",
+      risk_allele: "A", normal_allele: "T",
+      genotypes: {
+        "TT": { risk: "typical", label: "Non-Carrier (HbAA)", desc: "Normal hemoglobin A. Not a sickle cell carrier. Standard oxygen transport." },
+        "TA": { risk: "carrier", label: "Sickle Cell Trait (HbAS)", desc: "Sickle cell carrier — one copy of hemoglobin S. You are generally healthy and gain partial malaria protection. Under extreme conditions (high altitude, severe dehydration, extreme exertion), rare sickling events can occur." },
+        "AA": { risk: "elevated", label: "Sickle Cell Disease (HbSS)", desc: "Homozygous hemoglobin S. Sickle cell disease — red blood cells sickle under low oxygen, causing pain crises, organ damage, and shortened lifespan. Requires comprehensive hematology care." }
+      },
+      clinical: "The HBB Glu6Val mutation (rs76151636) causes hemoglobin S, which polymerizes under low oxygen tension, distorting red blood cells into a sickle shape. Sickle cell trait (carrier, HbAS) confers ~10x protection against severe Plasmodium falciparum malaria — explaining the high carrier frequency in malaria-endemic regions (up to 25% in sub-Saharan Africa). Carriers are generally healthy but should be aware of extreme exertion risks. Sickle cell disease (HbSS) is a serious condition requiring lifelong medical care.",
+      recommendation: "For TA (carrier): You are generally healthy. Avoid extreme exertion at altitude without acclimatization. Stay well-hydrated during intense exercise. If planning a family, partner screening is essential — if both are carriers, each child has 25% chance of sickle cell disease. For TT: Non-carrier. See also rs11549407 for beta-thalassemia carrier status."
+    },
+    {
+      rsid: "rs11549407", gene: "HBB", name: "HBB — Beta-Thalassemia Carrier",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Non-Carrier", desc: "Normal beta-globin production. Standard hemoglobin synthesis." },
+        "GA": { risk: "carrier", label: "Thalassemia Minor", desc: "Beta-thalassemia carrier (trait). Reduced beta-globin production from one allele. You may have mildly low MCV (small red blood cells) and mild anemia that does NOT respond to iron. Often misdiagnosed as iron deficiency." },
+        "AA": { risk: "elevated", label: "Thalassemia Major Risk", desc: "Homozygous beta-thalassemia variant. Potential for significantly reduced beta-globin production. Clinical severity depends on the specific mutation — ranges from thalassemia intermedia to transfusion-dependent thalassemia major." }
+      },
+      clinical: "Beta-thalassemia is caused by reduced or absent beta-globin chain production, leading to alpha/beta globin chain imbalance and ineffective erythropoiesis. Carriers (thalassemia minor) have microcytic hypochromic anemia with elevated HbA2 on hemoglobin electrophoresis. Importantly, thalassemia minor is frequently misdiagnosed as iron deficiency — iron supplementation is unnecessary and potentially harmful in thalassemia carriers. Carrier frequency reaches 5-15% in Mediterranean, Middle Eastern, and Southeast Asian populations due to malaria protection.",
+      recommendation: "For GA (carrier): If you have unexplained microcytic anemia (low MCV), this may explain it — tell your doctor. Do NOT take iron supplements unless iron deficiency is confirmed by ferritin testing. If planning a family, partner screening is essential. Hemoglobin electrophoresis can confirm carrier status (elevated HbA2 >3.5%)."
+    },
+    {
+      rsid: "rs121908769", gene: "SERPINA1", name: "SERPINA1 Pi*Z — Alpha-1 Antitrypsin Deficiency",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal (Pi*MM)", desc: "Normal alpha-1 antitrypsin production. Standard protease inhibitor protection of lung tissue." },
+        "CT": { risk: "carrier", label: "Carrier (Pi*MZ)", desc: "Alpha-1 antitrypsin carrier. ~60% of normal AAT levels. You are generally healthy, but smoking significantly increases emphysema risk even in carriers. AAT levels should be checked." },
+        "TT": { risk: "elevated", label: "Deficient (Pi*ZZ)", desc: "Alpha-1 antitrypsin deficiency. Only ~10-15% of normal AAT levels. High risk for early-onset emphysema (especially if smoking), liver disease, and panniculitis. Requires medical management." }
+      },
+      clinical: "SERPINA1 encodes alpha-1 antitrypsin (AAT), the primary protease inhibitor protecting lung tissue from neutrophil elastase. The Z allele (Glu342Lys) causes AAT protein misfolding and polymerization in hepatocyte endoplasmic reticulum — simultaneously reducing serum AAT (causing lung disease) and causing liver damage (from protein aggregation). Pi*ZZ homozygotes have ~85% reduced serum AAT and develop emphysema 10-15 years earlier than normal, dramatically accelerated by smoking. Pi*MZ carriers also have moderately increased COPD risk, especially with smoking.",
+      recommendation: "For CT (carrier): Never smoke — this is the single most important recommendation. Even carriers have increased COPD risk with smoking. Get serum AAT level measured. Avoid occupational dust/chemical exposure. For TT: Urgent — see a pulmonologist. AAT augmentation therapy is available. Absolutely no smoking. Liver function monitoring. Register with the Alpha-1 Foundation."
+    },
+    {
+      rsid: "rs28929474", gene: "SERPINA1", name: "SERPINA1 Pi*Z — AAT Deficiency (Confirmatory)",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Normal SERPINA1 at this position." },
+        "CT": { risk: "carrier", label: "Pi*Z Carrier", desc: "Confirms Pi*Z carrier status. Combined with rs121908769 results for complete AAT genotype determination." },
+        "TT": { risk: "elevated", label: "Pi*ZZ", desc: "Confirms Pi*ZZ genotype. Alpha-1 antitrypsin deficiency requiring medical evaluation and management." }
+      },
+      clinical: "This variant provides confirmatory genotyping for the SERPINA1 Pi*Z allele. Alpha-1 antitrypsin deficiency affects ~1 in 2,500 individuals of European descent and is one of the most common serious autosomal recessive conditions. It is severely underdiagnosed — the average diagnostic delay is 7 years. Combined with rs121908769 for complete Z allele determination.",
+      recommendation: "For CT/TT: See recommendations for rs121908769. The most critical action for any Pi*Z carrier or homozygote is lifelong smoking avoidance. Get serum alpha-1 antitrypsin levels measured and phenotyping/genotyping through a clinical lab."
+    },
+    {
+      rsid: "rs213950", gene: "CFTR", name: "CFTR — Cystic Fibrosis Carrier Marker",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Non-Carrier", desc: "Common CFTR allele at this locus. Standard chloride channel function." },
+        "GA": { risk: "moderate", label: "Variant Carrier", desc: "One copy of a CFTR variant. This common polymorphism (M470V) modifies CFTR chloride channel function and may affect carrier status assessment for cystic fibrosis." },
+        "AA": { risk: "moderate", label: "Homozygous Variant", desc: "Homozygous CFTR M470V. This variant alone does not cause CF but modifies CFTR function and can interact with other CFTR mutations. Associated with mild CFTR-related conditions (CBAVD, mild pancreatitis)." }
+      },
+      clinical: "CFTR (Cystic Fibrosis Transmembrane Conductance Regulator) is a chloride/bicarbonate channel. The most common CF-causing mutation (delta F508, rs113993960) is often not on consumer genotyping chips. This rs213950 variant (M470V) is a common polymorphism that modifies CFTR function. The V470 allele reduces CFTR chloride channel activity by ~50% and can act as a modifier when combined with pathogenic CFTR mutations. It has been associated with congenital bilateral absence of the vas deferens (CBAVD) and mild pancreatitis. Note: For comprehensive CF carrier screening, clinical-grade testing is recommended.",
+      recommendation: "For GA/AA: This is NOT a definitive CF carrier test. If you have a family history of cystic fibrosis or are planning a family, comprehensive clinical CFTR carrier screening (testing for >100 mutations) is strongly recommended. Consumer chip genotyping detects only a fraction of known CF-causing mutations."
+    },
+    {
+      rsid: "rs72558186", gene: "GJB2", name: "GJB2 — Hearing Loss / Connexin 26",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Non-Carrier", desc: "Normal connexin 26 gap junction protein. Standard cochlear function." },
+        "CT": { risk: "carrier", label: "Carrier", desc: "One copy of a GJB2 variant. Connexin 26 forms gap junctions essential for potassium recycling in the cochlea (inner ear). Carriers have normal hearing but can pass the variant to children." },
+        "TT": { risk: "elevated", label: "Affected", desc: "Two copies of GJB2 variant. Associated with non-syndromic sensorineural hearing loss — the most common genetic cause of deafness." }
+      },
+      clinical: "GJB2 encodes connexin 26, a gap junction protein essential for potassium ion recycling in the cochlea. Mutations in GJB2 are the most common cause of genetic hearing loss, responsible for ~50% of autosomal recessive non-syndromic deafness. The carrier frequency for GJB2 mutations is ~1/33 in many populations. Hearing loss from GJB2 mutations is typically congenital, non-progressive, and affects all frequencies. Cochlear implants are highly effective for GJB2-related deafness.",
+      recommendation: "For CT (carrier): Normal hearing — no action needed for you. If planning a family, partner screening for GJB2 mutations is recommended, especially if there is family history of childhood hearing loss. If both partners are carriers, newborn hearing screening will detect any affected child early."
+    },
+    {
+      rsid: "rs80338939", gene: "GJB2", name: "GJB2 35delG — Most Common Deafness Mutation",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Non-Carrier", desc: "No 35delG deletion. Normal connexin 26 reading frame." },
+        "GA": { risk: "carrier", label: "35delG Carrier", desc: "Carrier of the most common GJB2 mutation worldwide. The 35delG frameshift eliminates connexin 26 function. Carrier frequency: ~1/50 in Southern Europeans, ~1/30 in some Mediterranean populations." },
+        "AA": { risk: "elevated", label: "Homozygous 35delG", desc: "Homozygous for 35delG. Expected to cause congenital sensorineural hearing loss (moderate to profound) through loss of cochlear gap junction function." }
+      },
+      clinical: "GJB2 35delG is the single most common mutation causing genetic deafness worldwide, accounting for ~70% of all GJB2-related hearing loss in Europeans. It is a single-nucleotide deletion (c.35delG) in a run of six guanines, creating a frameshift and premature stop codon. The high carrier frequency (up to 1/30 in Mediterranean populations) suggests possible heterozygote advantage — possibly thicker skin providing barrier protection against pathogens.",
+      recommendation: "For GA (carrier): Your hearing is normal. Important for family planning — if your partner is also a GJB2 mutation carrier, genetic counseling is recommended. Early intervention for GJB2-related hearing loss (hearing aids, cochlear implants, sign language) produces excellent outcomes when started in infancy."
+    },
+    {
+      rsid: "rs5030858", gene: "PAH", name: "PAH — Phenylketonuria (PKU) Carrier",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Non-Carrier", desc: "Normal phenylalanine hydroxylase activity. Standard phenylalanine metabolism." },
+        "GA": { risk: "carrier", label: "PKU Carrier", desc: "One non-functional PAH allele. You metabolize phenylalanine normally (one working copy is sufficient). If your partner is also a carrier, each child has 25% chance of PKU." },
+        "AA": { risk: "elevated", label: "PKU Affected", desc: "Two non-functional PAH alleles. Unable to convert phenylalanine to tyrosine. Without dietary phenylalanine restriction from infancy, causes severe intellectual disability." }
+      },
+      clinical: "PAH (Phenylalanine Hydroxylase) converts the essential amino acid phenylalanine to tyrosine. PKU is the archetypal inborn error of metabolism — untreated PKU causes severe intellectual disability due to toxic phenylalanine accumulation in the developing brain. However, PKU was the first genetic disease successfully treated by dietary modification (low-phenylalanine diet). Universal newborn screening for PKU has been standard since the 1960s. Carrier frequency is ~1/50 in most populations.",
+      recommendation: "For GA (carrier): No dietary restrictions needed — carriers have normal phenylalanine metabolism. Important for family planning: if both partners are carriers, each child has 25% PKU risk. All newborns are screened for PKU via heel-prick blood test. PKU is treatable with phenylalanine-restricted diet and medical formula."
+    },
+    {
+      rsid: "rs1800460", gene: "TPMT", name: "TPMT*3C — Thiopurine Drug Sensitivity",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal Metabolizer", desc: "Full TPMT enzyme activity. Standard metabolism of thiopurine drugs (azathioprine, 6-mercaptopurine, thioguanine)." },
+        "GA": { risk: "moderate", label: "Intermediate Metabolizer", desc: "Reduced TPMT activity (~50%). Requires reduced thiopurine dosing — typically 30-70% of standard dose. Risk of myelosuppression at standard doses." },
+        "AA": { risk: "elevated", label: "Poor Metabolizer", desc: "Very low TPMT activity. Thiopurine drugs at standard doses cause severe, life-threatening myelosuppression (bone marrow suppression). Requires drastically reduced doses (10% of standard) or alternative drugs." }
+      },
+      clinical: "TPMT (Thiopurine S-Methyltransferase) inactivates thiopurine drugs used for leukemia, autoimmune diseases (IBD, rheumatoid arthritis), and organ transplant immunosuppression. TPMT*3C (rs1800460, A719G, Tyr240Cys) causes rapid protein degradation via the ubiquitin-proteasome pathway. ~10% of people are intermediate metabolizers, ~0.3% are poor metabolizers. TPMT genotyping before thiopurine prescription is now standard of care — this is one of the most successful pharmacogenomics implementations.",
+      recommendation: "For GA: If ever prescribed azathioprine, 6-mercaptopurine, or thioguanine, inform your doctor of TPMT intermediate metabolizer status. Dose reduction required. For AA: CRITICAL — standard thiopurine doses are life-threatening. This is a must-know pharmacogenomic result. Document in your medical records."
+    },
+    {
+      rsid: "rs1142345", gene: "TPMT", name: "TPMT*3A — Azathioprine Toxicity Risk",
+      risk_allele: "G", normal_allele: "A",
+      genotypes: {
+        "AA": { risk: "typical", label: "Normal", desc: "Standard TPMT enzyme activity at this locus." },
+        "AG": { risk: "moderate", label: "Intermediate", desc: "One copy of the TPMT*3A variant. Combined with rs1800460 results for complete TPMT*3A haplotype determination. Reduced thiopurine metabolism." },
+        "GG": { risk: "elevated", label: "Poor Metabolizer", desc: "Homozygous TPMT*3A. Severely reduced thiopurine metabolism. High risk of life-threatening myelosuppression with standard-dose thiopurine drugs." }
+      },
+      clinical: "TPMT*3A is the most common non-functional TPMT allele in European populations (frequency ~5%), defined by two SNPs: rs1800460 and rs1142345. Both mutations must be on the same chromosome (in cis) to define *3A. The combination causes rapid ubiquitin-mediated TPMT protein degradation. CPIC (Clinical Pharmacogenetics Implementation Consortium) guidelines provide detailed dosing recommendations based on TPMT genotype. Pre-treatment TPMT testing is endorsed by the FDA.",
+      recommendation: "For AG/GG: Document this result in your medical records and pharmacy profile. If ever prescribed thiopurines (azathioprine/Imuran, 6-MP/Purinethol, thioguanine), dose adjustment is required. This is an FDA-recommended pharmacogenomic test with strong clinical evidence supporting genotype-guided dosing."
+    },
+    {
+      rsid: "rs1800462", gene: "TPMT", name: "TPMT*2 — Thiopurine Metabolism",
+      risk_allele: "G", normal_allele: "C",
+      genotypes: {
+        "CC": { risk: "typical", label: "Normal", desc: "Standard TPMT enzyme at this locus. Normal thiopurine metabolism." },
+        "CG": { risk: "moderate", label: "TPMT*2 Carrier", desc: "One copy of TPMT*2 (Ala80Pro). Reduced TPMT activity due to protein instability. Intermediate thiopurine metabolizer — requires dose reduction." },
+        "GG": { risk: "elevated", label: "TPMT*2 Homozygous", desc: "Homozygous TPMT*2. Very low enzyme activity. Standard thiopurine doses are dangerous. Requires alternative drug or dramatically reduced dose." }
+      },
+      clinical: "TPMT*2 (rs1800462, Ala80Pro) is a less common non-functional TPMT allele (frequency ~0.5% in Europeans). The Ala80Pro substitution destabilizes the protein through altered hydrophobic packing. Combined with TPMT*3A and *3C genotyping, these three variants capture >95% of TPMT deficiency alleles. TPMT pharmacogenomics is a model for precision medicine implementation — FDA labeling, CPIC guidelines, and routine pre-prescription testing are all established.",
+      recommendation: "For CG/GG: Same clinical implications as other TPMT variants — document in medical records and inform any prescribing physician before thiopurine drug initiation. Consider carrying a pharmacogenomics card or adding to your electronic health record allergy/alert list."
+    },
+    {
+      rsid: "rs3211938", gene: "CD36", name: "CD36 — Malaria Resistance & Lipid Metabolism",
+      risk_allele: "G", normal_allele: "T",
+      genotypes: {
+        "TT": { risk: "typical", label: "Normal CD36", desc: "Full CD36 scavenger receptor expression. Normal fatty acid transport, platelet aggregation, and immune recognition of parasitized red blood cells." },
+        "TG": { risk: "carrier", label: "CD36 Reduced", desc: "Reduced CD36 expression. Partial protection against severe Plasmodium falciparum malaria through reduced parasite cytoadhesion. Modified lipid absorption and macrophage function." },
+        "GG": { risk: "moderate", label: "CD36 Deficient", desc: "CD36 deficiency. Strong malaria protection through inability of parasitized red blood cells to adhere to endothelium. However, associated with dyslipidemia (elevated triglycerides, reduced fatty acid uptake) and altered platelet function." }
+      },
+      clinical: "CD36 is a multifunctional scavenger receptor expressed on platelets, macrophages, endothelial cells, and enterocytes. It mediates: (1) long-chain fatty acid uptake, (2) platelet aggregation, (3) immune recognition of oxidized LDL and apoptotic cells, and (4) cytoadherence of Plasmodium falciparum-parasitized erythrocytes. CD36 deficiency (common in African and East Asian populations, up to 5%) provides malaria protection but affects lipid metabolism. The rs3211938 variant introduces a premature stop codon.",
+      recommendation: "For TG/GG: May affect lipid panels — elevated triglycerides with CD36 deficiency can be dietary-responsive (reduce saturated fat intake). If of African or Asian descent, this variant explains both potential malaria resistance heritage and possible lipid metabolism differences. Monitor lipid panel. CD36 deficiency can also cause platelet transfusion refractoriness — document for medical records."
+    }
+  ]
+},
+
+// ---------------------------------------------------------------------------
+// GENETIC ADVANTAGES & SUPERPOWERS
+// ---------------------------------------------------------------------------
+superpowers: {
+  label: "Genetic Advantages & Superpowers",
+  icon: "⚡",
+  description: "Your genetic gifts — variants that confer advantages, enhanced abilities, or protective effects. These are the bright spots in your genome. While other categories focus on risk, this section highlights where your DNA may give you an edge. Some SNPs here also appear in other categories — here they are framed through the lens of advantage.",
+  snps: [
+    {
+      rsid: "rs1815739", gene: "ACTN3", name: "ACTN3 R577X — Power Athlete Gene",
+      risk_allele: "C", normal_allele: "T",
+      genotypes: {
+        "CC": { risk: "low", label: "Power Athlete Gene", desc: "Full ACTN3 — Power Athlete Gene! You have complete alpha-actinin-3 expression in fast-twitch muscle fibers. This genotype is found in virtually all elite sprinters and power athletes. You have the genetic hardware for explosive speed and strength." },
+        "CT": { risk: "typical", label: "Mixed Muscle Profile", desc: "One copy of functional ACTN3. You have a balanced fast/slow-twitch muscle profile — versatile athletic potential with both power and endurance capabilities. Many successful all-around athletes have this genotype." },
+        "TT": { risk: "typical", label: "Endurance Advantage", desc: "No alpha-actinin-3 (ACTN3 knockout). Your muscles have shifted toward slow-twitch, oxidative metabolism — this is actually an ADVANTAGE for endurance sports. Enriched in elite marathon runners, long-distance cyclists, and ultra-endurance athletes." }
+      },
+      clinical: "ACTN3 is expressed exclusively in fast-twitch (type II) muscle fibers. The R577X variant determines whether you produce alpha-actinin-3 protein. CC = full fast-twitch capacity (sprint/power advantage). TT = no ACTN3, with compensatory shift to oxidative metabolism (endurance advantage). Both genotypes confer different athletic superpowers. No genotype at this locus is truly 'risk' — it's about which type of athleticism your muscles are optimized for. ~18% of the global population is TT (ACTN3 knockout) with no adverse health effects.",
+      recommendation: "For CC: You have the genetic foundation for explosive power — consider sports requiring sprinting, jumping, or strength. Train with explosive/plyometric exercises. For TT: You have endurance-optimized muscles — consider distance running, cycling, swimming, or other endurance sports. Train with high-volume aerobic work. For CT: You're genetically versatile — experiment to find your sweet spot."
+    },
+    {
+      rsid: "rs4988235", gene: "MCM6/LCT", name: "Lactase Persistence — Dairy Superpower",
+      risk_allele: "T", normal_allele: "C",
+      genotypes: {
+        "TT": { risk: "low", label: "Dairy Superpower", desc: "Lactase Persistence — Full dairy superpower! You maintain lactase enzyme production throughout adulthood. While ~65% of humanity loses the ability to digest milk after childhood, you retain it. This trait arose ~7,500 years ago in dairying cultures and was one of the strongest selective advantages in human evolution." },
+        "CT": { risk: "low", label: "Lactase Persistent", desc: "You maintain lactase production — one copy is sufficient for full dairy digestion. You can consume milk, cheese, yogurt, and other dairy without GI distress. The T allele is dominant for lactase persistence." },
+        "CC": { risk: "typical", label: "Lactose Intolerant", desc: "Ancestral genotype — lactase production declines after weaning (typically by age 5-10). This is the original human state. You may experience GI symptoms from dairy. Fermented dairy (yogurt, aged cheese) and lactase supplements can help." }
+      },
+      clinical: "Lactase persistence is one of the most powerful examples of recent human evolution. The T allele arose ~7,500 years ago in Central European dairying cultures and spread rapidly due to the nutritional advantage of adult milk consumption (calories, calcium, vitamin D, hydration). The selective coefficient was enormous (~1-10%, among the strongest in the human genome). The variant is in the MCM6 gene but acts as an enhancer controlling LCT (lactase) gene expression in the small intestine.",
+      recommendation: "For TT/CT: Your dairy superpower lets you access a calorie-dense, calcium-rich food source. Use it wisely — dairy is an excellent source of calcium, vitamin D, protein, and potassium. For CC: You're in the global majority! Fermented dairy (yogurt, kefir, aged cheese) has reduced lactose. Lactase enzyme supplements work well. Many plant milks are fortified with equivalent nutrients."
+    },
+    {
+      rsid: "rs762551", gene: "CYP1A2", name: "CYP1A2 — Fast Caffeine Metabolism",
+      risk_allele: "A", normal_allele: "C",
+      genotypes: {
+        "AA": { risk: "low", label: "Fast Caffeine Metabolizer", desc: "Coffee Superpower! You are a fast caffeine metabolizer. Coffee is not just safe for you — it's actually cardioprotective. Studies show fast metabolizers who drink 2-3 cups of coffee daily have REDUCED heart attack risk. Caffeine clears your system quickly, so you get the antioxidant benefits without prolonged cardiovascular stimulation." },
+        "AC": { risk: "typical", label: "Normal Caffeine Metabolism", desc: "Intermediate caffeine metabolism. Moderate coffee consumption is generally fine. You clear caffeine at a normal rate." },
+        "CC": { risk: "moderate", label: "Slow Caffeine Metabolizer", desc: "Slow caffeine metabolizer. Coffee stays in your system longer, prolonging cardiovascular stimulation. Heavy coffee consumption (>3 cups/day) is associated with increased heart attack risk in slow metabolizers. Limit to 1-2 cups and avoid caffeine after noon." }
+      },
+      clinical: "CYP1A2 is the primary enzyme metabolizing caffeine in the liver (responsible for >95% of caffeine clearance). The AA genotype (fast metabolizer) clears caffeine rapidly, allowing the antioxidant and anti-inflammatory compounds in coffee to predominate over the cardiovascular stimulant effects. Ahmed El-Sohemy's landmark study (JAMA 2006) showed that coffee was cardioprotective in fast metabolizers (AA) but increased heart attack risk in slow metabolizers (CC). This gene-diet interaction is one of the best examples of nutrigenomics in action.",
+      recommendation: "For AA: Enjoy your coffee — 2-4 cups daily is associated with reduced cardiovascular disease, type 2 diabetes, Parkinson's disease, and liver disease in fast metabolizers. For CC: Limit coffee to 1-2 cups, consumed before noon. Switch to tea (lower caffeine) or decaf in the afternoon. Your genetics mean caffeine affects your sleep and heart more than it does for fast metabolizers."
+    },
+    {
+      rsid: "rs53576", gene: "OXTR", name: "OXTR GG — Enhanced Empathy & Social Bonding",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "low", label: "Empathy Superpower", desc: "Enhanced Empathy — GG at the oxytocin receptor is associated with greater empathic accuracy, better social skills, and stronger pair-bonding. You may be naturally more attuned to others' emotions, more trusting, and more socially sensitive. Associated with better parenting behavior and relationship satisfaction." },
+        "GA": { risk: "typical", label: "Intermediate Social", desc: "Intermediate oxytocin receptor expression. Standard social bonding and empathic response." },
+        "AA": { risk: "moderate", label: "Reduced Empathic Accuracy", desc: "Lower oxytocin receptor expression associated with reduced empathic accuracy, lower social sensitivity, and less emotional reactivity. This can be a STRENGTH in high-stress careers requiring emotional detachment (surgery, emergency medicine, military)." }
+      },
+      clinical: "OXTR encodes the oxytocin receptor — oxytocin is the 'bonding hormone' involved in social recognition, pair bonding, maternal behavior, trust, and empathy. The GG genotype is associated with greater empathic accuracy (ability to read emotions), more prosocial behavior, and higher social sensitivity. Interestingly, the AA genotype, while associated with lower empathy, may be advantageous in careers requiring emotional regulation under stress. This is a true gene-environment interaction — the GG advantage depends on a supportive social environment.",
+      recommendation: "For GG: Your empathy superpower is a genuine advantage for relationships, parenting, and social careers. Be aware it can also make you more vulnerable to emotional contagion and burnout — maintain boundaries. For AA: You may need to more consciously practice empathy skills, but your emotional resilience can be a professional asset."
+    },
+    {
+      rsid: "rs2802292", gene: "FOXO3", name: "FOXO3 — Longevity Gene",
+      risk_allele: "G", normal_allele: "T",
+      genotypes: {
+        "TT": { risk: "typical", label: "Normal", desc: "Standard FOXO3 expression. Typical cellular stress response and autophagy." },
+        "TG": { risk: "low", label: "Longevity Carrier", desc: "One copy of the FOXO3 longevity allele. FOXO3 is the most consistently replicated human longevity gene across multiple populations (Japanese, German, Italian, American, Chinese). Associated with ~1.3x increased odds of reaching age 100." },
+        "GG": { risk: "low", label: "Longevity Superpower", desc: "Longevity Superpower — Homozygous FOXO3 longevity variant. This is the most replicated longevity gene in humans. Associated with ~2.75x increased odds of living to 100. Enhanced cellular stress resistance, better DNA repair, and more efficient autophagy." }
+      },
+      clinical: "FOXO3 (Forkhead Box O3) is a transcription factor that activates genes for cellular stress resistance, DNA repair, autophagy, and apoptosis. It is the most consistently replicated human longevity gene — validated in >15 independent populations. FOXO3 is in the insulin/IGF-1 signaling pathway (the most conserved aging pathway). When insulin/IGF-1 signaling is low (e.g., during fasting), FOXO3 translocates to the nucleus and activates protective gene programs. This connects intermittent fasting, exercise, and caloric restriction to FOXO3-mediated longevity benefits.",
+      recommendation: "For TG/GG: Your longevity genetics are favorable — maximize the advantage with lifestyle: intermittent fasting (activates FOXO3 via reduced insulin/IGF-1), regular exercise (activates AMPK → FOXO3), moderate caloric intake, and stress management. These practices synergize with your FOXO3 genetics. For TT: The same lifestyle practices still activate FOXO3 — they're just more impactful when combined with favorable genetics."
+    },
+    {
+      rsid: "rs4680", gene: "COMT", name: "COMT Val158Met — Cognitive Flexibility",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Warrior (Val/Val)", desc: "Warrior Genotype — Fast COMT enzyme. Rapid dopamine clearance in the prefrontal cortex. You perform better under stress, have higher pain tolerance, and thrive in high-pressure situations. The 'warrior' advantage: grace under fire." },
+        "GA": { risk: "low", label: "Balanced (Val/Met)", desc: "Cognitive Flexibility Superpower — You have the balanced Val/Met genotype. Intermediate dopamine levels in the prefrontal cortex. You can shift between 'warrior' (stress performance) and 'worrier' (cognitive depth) modes. This flexibility may be the optimal genotype for complex modern life." },
+        "AA": { risk: "typical", label: "Worrier (Met/Met)", desc: "Worrier Genotype — Slow COMT enzyme. Higher prefrontal dopamine levels. Superior working memory, cognitive flexibility, and attention to detail in low-stress conditions. The 'worrier' advantage: deeper thinking and better executive function when calm." }
+      },
+      clinical: "COMT (Catechol-O-Methyltransferase) is the primary enzyme degrading dopamine in the prefrontal cortex (unlike the striatum, where DAT dominates). The Val158Met variant creates a 3-4 fold difference in enzyme activity. Val/Val (warrior) = fast dopamine clearance = better stress performance but lower baseline cognitive function. Met/Met (worrier) = slow clearance = higher baseline cognition but stress vulnerability. Val/Met = balanced, possibly optimal. This warrior/worrier framework is one of the most fascinating gene-behavior relationships in psychiatry.",
+      recommendation: "For GG (Warrior): You thrive under pressure — seek out challenging environments. May need to actively cultivate focus and attention in low-stress settings (meditation, structured work). For AA (Worrier): Protect your cognitive edge by managing stress. Avoid excessive stimulants. Your natural attention to detail is an asset. For GA: You have the best of both worlds — adaptable cognition."
+    },
+    {
+      rsid: "rs1800497", gene: "DRD2/ANKK1", name: "DRD2 Taq1A — Reward System",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "low", label: "Healthy Reward System", desc: "Optimal Dopamine Reward — Full D2 receptor density. Your brain's reward system is well-calibrated. You derive normal satisfaction from natural rewards (food, social connection, achievement) without needing excessive stimulation. Associated with lower addiction vulnerability." },
+        "GA": { risk: "moderate", label: "Reduced D2 Density", desc: "Moderately reduced D2 receptor density (~20-30% reduction). You may need slightly more stimulation to feel rewarded. Be mindful of compensatory reward-seeking behaviors." },
+        "AA": { risk: "elevated", label: "Low D2 Density", desc: "Significantly reduced D2 receptor density (~40% reduction). The 'reward deficiency syndrome' genotype — you may seek more intense stimulation to achieve satisfaction. Higher vulnerability to addiction but also associated with novelty-seeking and exploration." }
+      },
+      clinical: "The DRD2/ANKK1 Taq1A variant (rs1800497) affects dopamine D2 receptor density in the striatum. The A1 allele (A) reduces D2 receptor availability by ~20-40%, affecting reward sensitivity. This was one of the first addiction-associated variants identified (Blum et al. 1990). Reduced D2 density creates a 'reward deficit' where natural rewards are less satisfying, potentially driving compensatory substance use, overeating, or risk-taking. However, the same drive can channel into entrepreneurship, exploration, and achievement.",
+      recommendation: "For GG: Your well-calibrated reward system is a genuine advantage — lower addiction risk and more satisfaction from healthy activities. Maintain with regular exercise (natural dopamine boost), social connection, and purposeful activities. For GA/AA: Channel your reward-seeking drive constructively. Exercise is especially important (natural dopamine). Be aware of addiction vulnerability and moderate accordingly."
+    },
+    {
+      rsid: "rs11209026", gene: "IL23R", name: "IL23R — Crohn's Disease Protection",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "typical", label: "Normal", desc: "Standard IL-23 receptor signaling. Typical inflammatory bowel disease risk." },
+        "GA": { risk: "low", label: "IBD Protection", desc: "Crohn's Protection — One copy of the protective IL23R variant. The R381Q substitution reduces IL-23 receptor signaling, dampening the Th17 inflammatory response. Associated with ~2-3x reduced risk of Crohn's disease and other autoimmune conditions." },
+        "AA": { risk: "low", label: "Strong IBD Protection", desc: "Strong IBD Protection — Homozygous protective IL23R variant. Maximally reduced IL-23/Th17 inflammatory signaling. Substantially reduced risk of Crohn's disease, ulcerative colitis, psoriasis, and ankylosing spondylitis." }
+      },
+      clinical: "IL23R encodes a subunit of the interleukin-23 receptor, which drives Th17 cell differentiation — a key inflammatory pathway in IBD, psoriasis, and other autoimmune diseases. The R381Q variant (rs11209026) is protective: it reduces IL-23 signaling, dampening excessive Th17 inflammation. This discovery validated IL-23 as a therapeutic target — anti-IL23 antibodies (ustekinumab, risankizumab, guselkumab) are now approved for Crohn's, psoriasis, and other autoimmune conditions. Having this protective variant means your immune system is less prone to the Th17-driven inflammation that underlies many autoimmune diseases.",
+      recommendation: "For GA/AA: This is a genuine protective variant — your IL-23/Th17 axis is naturally attenuated, reducing autoimmune disease risk. Maintain gut health with fiber-rich diet, diverse microbiome support, and anti-inflammatory lifestyle. Your genetics provide protection, but healthy habits amplify it."
+    },
+    {
+      rsid: "rs6025", gene: "F5", name: "Factor V Leiden — No Clotting Disorder",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "low", label: "No Clotting Disorder", desc: "Factor V Leiden Negative — All Clear! You do not carry the Factor V Leiden mutation. Your Factor V is normally inactivated by activated Protein C. No increased risk of venous thromboembolism (DVT/PE) from this variant." },
+        "GA": { risk: "moderate", label: "FVL Heterozygous", desc: "Factor V Leiden carrier — 3-8x increased risk of venous thromboembolism (DVT, pulmonary embolism). Factor V is resistant to inactivation by activated Protein C, creating a hypercoagulable state. Important for travel, surgery, and hormonal contraception decisions." },
+        "AA": { risk: "elevated", label: "FVL Homozygous", desc: "Homozygous Factor V Leiden — 50-100x increased VTE risk. Significant hypercoagulable state. Requires hematology management, prophylactic anticoagulation for high-risk situations, and avoidance of estrogen-containing contraceptives." }
+      },
+      clinical: "Factor V Leiden (rs6025, R506Q) is the most common inherited thrombophilia, carried by ~5% of Europeans. The mutation makes Factor V resistant to inactivation by activated Protein C, prolonging thrombin generation. For GG (negative): This is genuinely protective information — many people worry about blood clots during travel or surgery, and knowing you're FVL-negative is reassuring. For carriers: Risk is multiplicative with other factors (OCP use, pregnancy, immobilization, surgery).",
+      recommendation: "For GG: Reassuring result — no Factor V Leiden. Standard VTE prevention during long flights (hydrate, move) and surgery (standard prophylaxis sufficient). For GA: Avoid estrogen-containing contraceptives, use compression stockings during long flights, inform surgeons for enhanced VTE prophylaxis. For AA: Hematology referral for ongoing management."
+    },
+    {
+      rsid: "rs1800562", gene: "HFE", name: "HFE C282Y — No Iron Overload",
+      risk_allele: "A", normal_allele: "G",
+      genotypes: {
+        "GG": { risk: "low", label: "No Hemochromatosis", desc: "HFE C282Y Negative — No hereditary hemochromatosis risk from this variant. Your iron absorption regulation is normal. Note: You may still carry H63D (rs1799945) — check that variant separately." },
+        "GA": { risk: "carrier", label: "C282Y Carrier", desc: "HFE C282Y carrier. You carry one copy of the most common hemochromatosis mutation. Carriers rarely develop iron overload alone, but compound heterozygosity (C282Y/H63D) can cause mild iron accumulation. Important for family planning." },
+        "AA": { risk: "elevated", label: "C282Y Homozygous", desc: "HFE C282Y homozygous — hereditary hemochromatosis genotype. ~80% penetrance in males, ~50% in females. Without treatment (phlebotomy), progressive iron overload damages liver, heart, pancreas, and joints. Early detection and treatment prevents all complications." }
+      },
+      clinical: "HFE C282Y is the primary mutation causing hereditary hemochromatosis type 1 — the most common genetic disease in people of Northern European ancestry (1 in 200 are C282Y homozygotes). HFE normally regulates hepcidin, the master iron-regulating hormone. C282Y disrupts this, causing inappropriately low hepcidin and excessive intestinal iron absorption. For GG: This is genuinely reassuring — hemochromatosis is common and treatable but devastating if missed. Also check rs1799945 (H63D) for compound heterozygosity. In carrier status context: if planning a family and your partner is also a carrier, each child has 25% chance of hemochromatosis — but it's entirely treatable with regular blood donation/phlebotomy.",
+      recommendation: "For GG: No hemochromatosis from C282Y. Still check ferritin if you have unexplained fatigue, joint pain, or liver disease — other causes exist. For GA: Check ferritin and transferrin saturation. If normal, no action needed. For AA: Get ferritin and transferrin saturation checked immediately. If elevated, begin therapeutic phlebotomy. This is 100% treatable — early detection prevents all complications."
+    }
+  ]
 }
 
 }; // end SNP_DATABASE
@@ -2655,6 +3403,9 @@ function renderApp() {
     const badge = riskCount > 0 ? ` (${riskCount}!)` : '';
     navHTML += `<a href="#" data-section="${key}">${cat.icon} ${cat.label}${badge}</a>`;
   }
+  navHTML += '<div class="nav-section">Your Profile</div>';
+  navHTML += '<a href="#" data-section="superpowers_summary">⚡ Superpowers & Gifts</a>';
+  navHTML += '<a href="#" data-section="caution_areas">⚠ Caution Areas</a>';
   navHTML += '<div class="nav-section">Personalized Plans</div>';
   navHTML += '<a href="#" data-section="supplements">💊 Supplement Protocol</a>';
   navHTML += '<a href="#" data-section="chat">💬 Ask About My DNA</a>';
@@ -2687,6 +3438,10 @@ function renderApp() {
   }
 
   // Supplement protocol
+  // Superpowers & Caution summaries
+  html += renderSuperpowersSummary();
+  html += renderCautionAreas();
+
   html += renderSupplements();
 
   // Chat section
@@ -3079,6 +3834,171 @@ function buildSupplementProtocol() {
   }
 
   return supps;
+}
+
+function renderSuperpowersSummary() {
+  let gifts = [];
+
+  for (const [catKey, cat] of Object.entries(analysisResults)) {
+    for (const r of cat.results) {
+      // Collect protective / advantageous variants
+      if (r.risk === 'low') {
+        gifts.push({ ...r, category: cat.label, icon: cat.icon });
+      }
+      // Specific superpowers by genotype
+      if (r.rsid === 'rs1815739' && r.userGenotype === 'CC') {
+        gifts.push({ ...r, category: 'Athletic Performance', icon: '💪', superpower: 'Power Athlete Gene', superDesc: 'Full fast-twitch muscle fiber expression. Found in virtually all elite sprinters and power athletes. You have the genetic hardware for explosive strength and speed.' });
+      }
+      if (r.rsid === 'rs762551' && r.label && r.label.includes('Fast')) {
+        gifts.push({ ...r, category: 'Metabolism', icon: '☕', superpower: 'Coffee Superpower', superDesc: 'You metabolize caffeine rapidly. For your genotype, moderate coffee consumption (3-4 cups/day) is actually cardioprotective and may reduce liver cancer risk. Coffee is medicine for you.' });
+      }
+      if (r.rsid === 'rs53576' && r.userGenotype === 'GG') {
+        gifts.push({ ...r, category: 'Social Intelligence', icon: '🤝', superpower: 'Enhanced Empathy', superDesc: 'Enhanced oxytocin receptor function gives you greater empathy, social sensitivity, and the ability to read others. You get more stress-buffering benefit from social connections.' });
+      }
+      if (r.rsid === 'rs4680' && (r.userGenotype === 'AG' || r.label && r.label.includes('Balanced'))) {
+        gifts.push({ ...r, category: 'Cognition', icon: '🧠', superpower: 'Cognitive Flexibility', superDesc: 'Val/Met is the "best of both worlds" — good baseline cognition AND stress resilience. You can perform well under pressure while maintaining sharp executive function. The most adaptable COMT genotype.' });
+      }
+      if (r.rsid === 'rs6025' && r.userGenotype === 'CC') {
+        gifts.push({ ...r, category: 'Hematology', icon: '🩸', superpower: 'Clean Clotting', superDesc: 'No Factor V Leiden mutation. Your clotting cascade functions normally — no increased thrombosis risk from this common inherited thrombophilia.' });
+      }
+      if (r.rsid === 'rs1800562' && (r.userGenotype === 'GG' || r.userGenotype === 'CC')) {
+        if (r.risk === 'typical') gifts.push({ ...r, category: 'Iron Metabolism', icon: '🛡', superpower: 'No Iron Overload Risk', superDesc: 'No HFE C282Y mutation. Your iron absorption is normally regulated — no risk of hereditary hemochromatosis from this common variant.' });
+      }
+      if (r.rsid === 'rs2802292' && r.risk === 'low') {
+        gifts.push({ ...r, category: 'Longevity', icon: '∞', superpower: 'Longevity Gene', superDesc: 'You carry the FOXO3 longevity allele — found 2.7x more often in centenarians. This enhances autophagy, DNA repair, and stress resistance at the cellular level.' });
+      }
+      if (r.rsid === 'rs429358' && r.userGenotype === 'TT' && r.risk === 'typical') {
+        gifts.push({ ...r, category: 'Neuroprotection', icon: '🧠', superpower: 'No APOE ε4', superDesc: 'You do NOT carry the APOE ε4 allele — the strongest common genetic risk factor for Alzheimer\'s disease. Your APOE status is favorable for both cardiovascular and neurological health.' });
+      }
+      if (r.rsid === 'rs4988235' && (r.userGenotype === 'AA' || r.userGenotype === 'AG') && r.risk === 'low') {
+        gifts.push({ ...r, category: 'Digestion', icon: '🥛', superpower: 'Lactase Persistence', superDesc: 'You produce lactase into adulthood — you can digest dairy without issue. This is actually a "superpower" mutation from ~7,500 years ago that only ~35% of humanity carries.' });
+      }
+      if (r.rsid === 'rs1801133' && r.userGenotype === 'GG' && r.risk === 'typical') {
+        gifts.push({ ...r, category: 'Methylation', icon: '⚗', superpower: 'Full MTHFR Function', superDesc: 'Your MTHFR C677T is wild-type — 100% enzyme activity. Efficient folate metabolism, normal homocysteine processing, and optimal methylation capacity.' });
+      }
+    }
+  }
+
+  // Deduplicate by rsid+superpower
+  const seen = new Set();
+  gifts = gifts.filter(g => {
+    const key = g.rsid + (g.superpower || g.label);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  let html = `<section id="section-superpowers_summary">
+    <h2>Your Genetic Superpowers & Gifts</h2>
+    <p class="section-desc">These are your genetic advantages — variants that confer protection, enhanced abilities, or favorable traits. Not everything in your genome is about risk.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card" style="border-color: rgba(52,211,153,0.3);">
+        <div class="stat-value" style="background: linear-gradient(135deg, var(--green), var(--cyan)); -webkit-background-clip: text;">${gifts.length}</div>
+        <div class="stat-label">Genetic Advantages Identified</div>
+      </div>
+    </div>`;
+
+  for (const g of gifts) {
+    const title = g.superpower || g.name;
+    const desc = g.superDesc || g.desc;
+    html += `<div class="card" style="border-color: rgba(52,211,153,0.2);">
+      <h3>
+        <span style="font-size:1.2rem;">${g.icon || '⚡'}</span>
+        <span class="gene">${g.gene}</span>
+        <span style="color:var(--green); font-weight:700;">${title}</span>
+        <span class="rsid">${g.rsid}</span>
+        <span class="genotype-badge risk-low">${g.userGenotype}</span>
+      </h3>
+      <div class="detail" style="color:var(--green); opacity:0.9;">${desc}</div>
+      ${g.clinical ? `<div class="clinical"><strong>Why This Matters:</strong> ${g.clinical}</div>` : ''}
+    </div>`;
+  }
+
+  if (gifts.length === 0) {
+    html += `<div class="empty-state">Superpower analysis in progress...</div>`;
+  }
+
+  html += `</section>`;
+  return html;
+}
+
+function renderCautionAreas() {
+  let cautions = [];
+
+  for (const [catKey, cat] of Object.entries(analysisResults)) {
+    for (const r of cat.results) {
+      if (r.risk === 'elevated' || r.risk === 'high') {
+        cautions.push({ ...r, category: cat.label, icon: cat.icon });
+      }
+    }
+  }
+
+  // Sort: high first, then elevated
+  cautions.sort((a, b) => (a.risk === 'high' ? 0 : 1) - (b.risk === 'high' ? 0 : 1));
+
+  let html = `<section id="section-caution_areas">
+    <h2>Caution Areas & Risk Summary</h2>
+    <p class="section-desc">These variants represent areas where proactive monitoring, lifestyle changes, or medical consultation may meaningfully reduce your disease risk. Knowledge is power — these are actionable, not inevitable.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card" style="border-color: rgba(248,113,113,0.3);">
+        <div class="stat-value" style="background: linear-gradient(135deg, var(--orange), var(--red)); -webkit-background-clip: text;">${cautions.filter(c => c.risk === 'high').length}</div>
+        <div class="stat-label">High Priority</div>
+      </div>
+      <div class="stat-card" style="border-color: rgba(249,115,22,0.3);">
+        <div class="stat-value" style="background: linear-gradient(135deg, var(--yellow), var(--orange)); -webkit-background-clip: text;">${cautions.filter(c => c.risk === 'elevated').length}</div>
+        <div class="stat-label">Elevated Risk</div>
+      </div>
+      <div class="stat-card" style="border-color: rgba(96,165,250,0.3);">
+        <div class="stat-value">${cautions.length}</div>
+        <div class="stat-label">Total Caution Variants</div>
+      </div>
+    </div>
+
+    <div class="card" style="border-color: rgba(251,191,36,0.3); margin-bottom:24px;">
+      <h3 style="color: var(--yellow);">Important Context</h3>
+      <div class="clinical" style="margin-top:8px;">
+        <p>Having risk variants does NOT mean you will develop a condition. Most diseases are polygenic (many genes) and heavily influenced by lifestyle, diet, exercise, stress, sleep, and environment. These findings highlight where <strong>targeted prevention</strong> can have the most impact.</p>
+        <p style="margin-top:8px;">Think of these as <strong>"where to focus your attention"</strong> rather than predictions.</p>
+      </div>
+    </div>`;
+
+  // Group by category
+  const grouped = {};
+  for (const c of cautions) {
+    if (!grouped[c.category]) grouped[c.category] = [];
+    grouped[c.category].push(c);
+  }
+
+  for (const [category, items] of Object.entries(grouped)) {
+    html += `<div class="card" style="border-color: rgba(249,115,22,0.2);">
+      <h3 style="color: var(--orange);">${items[0].icon || '⚠'} ${category}</h3>`;
+
+    for (const c of items) {
+      html += `<div style="padding:12px 0; border-bottom: 1px solid var(--border);">
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span class="genotype-badge risk-${c.risk}">${c.risk.toUpperCase()}</span>
+          <span class="gene">${c.gene}</span> — ${c.name}
+          <span class="rsid" style="margin-left:auto;">${c.userGenotype}</span>
+        </div>
+        <div class="detail">${c.desc}</div>
+        ${c.recommendation ? `<div class="recommendation" style="margin-top:8px;">
+          <div class="recommendation-title">What To Do</div>
+          ${c.recommendation}
+        </div>` : ''}
+      </div>`;
+    }
+
+    html += `</div>`;
+  }
+
+  if (cautions.length === 0) {
+    html += `<div class="empty-state">No elevated or high risk variants detected.</div>`;
+  }
+
+  html += `</section>`;
+  return html;
 }
 
 function renderSupplements() {
