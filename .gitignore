@@ -1,0 +1,7 @@
+# Personal DNA data - never commit
+dna_data.txt
+*.txt
+!README.txt
+
+# Node
+node_modules/
